@@ -1,0 +1,15 @@
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\bin\Debug\net8.0\ProyectoPrograIII.deps.json
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\bin\Debug\net8.0\ProyectoPrograIII.runtimeconfig.json
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\bin\Debug\net8.0\ProyectoPrograIII.dll
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\bin\Debug\net8.0\ProyectoPrograIII.pdb
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.csproj.AssemblyReference.cache
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.AssemblyInfoInputs.cache
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.AssemblyInfo.cs
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.csproj.CoreCompileInputs.cache
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.sourcelink.json
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.dll
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\refint\ProyectoPrograIII.dll
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.pdb
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ProyectoPrograIII.genruntimeconfig.cache
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\ProyectoPrograIII\obj\Debug\net8.0\ref\ProyectoPrograIII.dll
