@@ -1,0 +1,129 @@
+﻿using ProyectoPrograIII.Context;
+using ProyectoPrograIII.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProyectoPrograIII.Repository
+{
+    public class LoginDao
+    {
+        #region Contex
+        public ProyectoProgra3Context contexto = new ProyectoProgra3Context();
+        #endregion
+
+        #region Seleccionar Todo
+        public List<Usuario> getAll()
+        {
+            var usuario = contexto.Usuarios.ToList<Usuario>();
+            return usuario;
+        }
+        #endregion
+
+        #region Seleccionar por Id
+        public Usuario? GetById(int id)
+        {
+            var usuario = contexto.Usuarios.Where(x => x.UsuarioId == id).FirstOrDefault();
+            return usuario == null ? null : usuario;
+        }
+        #endregion
+
+        #region Obtener por Corroo
+        public Usuario? GetByCorreo(string correo)
+        {
+            var usuario = contexto.Usuarios.Where(x => x.Correo == correo).FirstOrDefault();
+
+            return usuario == null ? null : usuario;
+        }
+        #endregion
+
+        #region Insertar
+        public bool CrearUsuario(Usuario usuario)
+        {
+            try
+            {
+                var user = new Usuario
+                {
+                    Nombre = usuario.Nombre,
+                    Direccion = usuario.Direccion,
+                    Contacto = usuario.Contacto,
+                    Correo = usuario.Correo,
+                    GoogleId = usuario.GoogleId,
+                    Contraseña = usuario.Contraseña,
+                    MetodoLogin = usuario.MetodoLogin
+                };
+                contexto.Usuarios.Add(user);
+
+                contexto.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al crear usuario: {ex.Message}");
+                return false;
+            }
+        }
+        #endregion
+
+        #region Actualizar
+        public bool actualizar(int id, Usuario actualizar)
+        {
+            try
+            {
+                var usuarioUpdate = GetById(id);
+
+                if (usuarioUpdate == null)
+                {
+                    Console.WriteLine("Usuario es null");
+                    return false;
+                }
+
+                usuarioUpdate.Nombre = actualizar.Nombre;
+                usuarioUpdate.Direccion = actualizar.Direccion;
+                usuarioUpdate.Contacto = actualizar.Contacto;
+                usuarioUpdate.Correo = actualizar.Correo;
+                usuarioUpdate.GoogleId = actualizar.GoogleId;
+                usuarioUpdate.Contraseña = actualizar.Contraseña;
+                usuarioUpdate.MetodoLogin = actualizar.MetodoLogin;
+
+                contexto.Usuarios.Update(usuarioUpdate);
+                contexto.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.InnerException);
+                return false;
+            }
+        }
+        #endregion
+
+        #region Eliminar
+        public bool eliminarUsuario(int id)
+        {
+            var borrar = GetById(id);
+            try
+            {
+                if (borrar == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    contexto.Usuarios.Remove(borrar);
+                    contexto.SaveChanges();
+                    return true;
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.InnerException);
+                return false;
+            }
+        }
+        #endregion
+    }
+}

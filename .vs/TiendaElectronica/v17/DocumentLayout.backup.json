@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\webapi_easy_commerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|solutionrelative:webapi_easy_commerce\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\repository\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\repository\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\context\\proyectoprogra3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\context\\proyectoprogra3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +50,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoPrograIII\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Models\\Usuario.cs",
+              "RelativeToolTip": "ProyectoPrograIII\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T20:17:25.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginDao.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\LoginDao.cs",
+              "RelativeDocumentMoniker": "ProyectoPrograIII\\Repository\\LoginDao.cs",
+              "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\LoginDao.cs",
+              "RelativeToolTip": "ProyectoPrograIII\\Repository\\LoginDao.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwHUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:06:26.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwEMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T16:58:19.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProyectoProgra3Context.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs",
               "RelativeDocumentMoniker": "ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs",
               "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs",
               "RelativeToolTip": "ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs",
-              "ViewState": "AgIAABYBAAAAAAAAAAAAABYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T16:42:13.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Class1.cs",
               "RelativeDocumentMoniker": "ProyectoPrograIII\\Class1.cs",
@@ -59,8 +110,7 @@
               "RelativeToolTip": "ProyectoPrograIII\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T01:45:10.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T01:45:10.361Z"
             }
           ]
         }
