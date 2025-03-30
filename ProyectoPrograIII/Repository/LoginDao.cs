@@ -125,5 +125,40 @@ namespace ProyectoPrograIII.Repository
             }
         }
         #endregion
+
+        #region Auntentificacion
+        public Usuario login(string correo, string contraseña)
+        {
+            var login = contexto.Usuarios.FirstOrDefault(p => p.Correo == correo && p.Contraseña == contraseña);
+            return login;
+        }
+        #endregion
+
+        #region Auntentificacion Direccion y Contacto
+        public (bool valido, List<string> camposFaltantes) ValidarDireccionYContacto(int usuarioId)
+        {
+            var usuario = contexto.Usuarios.FirstOrDefault(u => u.UsuarioId == usuarioId);
+
+            if (usuario == null)
+            {
+                throw new Exception("El usuario no existe.");
+            }
+
+            List<string> camposFaltantes = new List<string>();
+
+            if (string.IsNullOrWhiteSpace(usuario.Direccion))
+            {
+                camposFaltantes.Add("Dirección");
+            }
+
+            if (string.IsNullOrWhiteSpace(usuario.Contacto))
+            {
+                camposFaltantes.Add("Contacto");
+            }
+
+            return (camposFaltantes.Count == 0, camposFaltantes);
+        }
+
+        #endregion
     }
 }

@@ -11,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\repository\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\webapi_easy_commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|solutionrelative:webapi_easy_commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\context\\proyectoprogra3context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,14 +51,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "ProyectoPrograIII\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Models\\Usuario.cs",
-              "RelativeToolTip": "ProyectoPrograIII\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\Program.cs",
+              "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Program.cs",
+              "RelativeToolTip": "WebApi_Easy_Commerce\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T20:17:25.698Z",
+              "WhenOpened": "2025-03-30T14:03:25.084Z",
               "EditorCaption": ""
             },
             {
@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "ProyectoPrograIII\\Repository\\LoginDao.cs",
               "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\LoginDao.cs",
               "RelativeToolTip": "ProyectoPrograIII\\Repository\\LoginDao.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAmwHUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAmwI8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T17:06:26.894Z",
               "EditorCaption": ""
@@ -82,7 +82,7 @@
               "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
               "RelativeToolTip": "WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwEMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAqwIEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T16:58:19.456Z",
               "EditorCaption": ""
@@ -97,8 +97,7 @@
               "RelativeToolTip": "ProyectoPrograIII\\Context\\ProyectoProgra3Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T16:42:13.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T16:42:13.903Z"
             },
             {
               "$type": "Document",

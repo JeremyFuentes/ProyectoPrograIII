@@ -13,10 +13,16 @@ namespace WebApi_Easy_Commerce.Controllers
 
         #region Seleecionar Todos
         [HttpGet("ObtenerTodosUsuarios")]
-
-        public Usuario SelectAll(Usuario alumno)
+        public IActionResult ObtenerTodosLosUsuarios()
         {
-            return alumno ;
+            var usuarios = _loginDao.getAll();
+
+            if (usuarios == null || usuarios.Count == 0)
+            {
+                return NotFound("No hay usuarios registrados.");
+            }
+
+            return Ok(usuarios);
         }
         #endregion
 
@@ -80,5 +86,56 @@ namespace WebApi_Easy_Commerce.Controllers
         }
         #endregion
 
+        #region Autentificacion Login
+        [HttpPost("AutenticarUsuario")]
+        public IActionResult AutenticarUsuario([FromBody] Usuario usuario)
+        {
+            if (string.IsNullOrEmpty(usuario.Correo) || string.IsNullOrEmpty(usuario.Contraseña))
+            {
+                return BadRequest("Correo y contraseña son obligatorios.");
+            }
+
+            var usuarioAutenticado = _loginDao.login(usuario.Correo, usuario.Contraseña);
+
+            if (usuarioAutenticado == null)
+            {
+                return Unauthorized("Credenciales incorrectas.");
+            }
+
+            return Ok(new
+            {
+                mensaje = "Autenticación exitosa",
+                correo = usuarioAutenticado.UsuarioId,
+            });
+        }
+        #endregion
+
+        #region Validar Direccion y Contacto
+        [HttpGet("ValidarDireccionContacto/{id}")]
+        public IActionResult ValidarDireccionContacto(int id)
+        {
+            try
+            {
+                var (valido, camposFaltantes) = _loginDao.ValidarDireccionYContacto(id);
+
+                if (!valido)
+                {
+                    return BadRequest(new
+                    {
+                        mensaje = "Debe completar los siguientes campos para continuar.",
+                        camposFaltantes
+                    });
+                }
+
+                return Ok(new { mensaje = "Verificación exitosa." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensaje = ex.Message });
+            }
+        }
+
+
+        #endregion
     }
 }

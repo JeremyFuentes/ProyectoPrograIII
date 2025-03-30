@@ -19,7 +19,7 @@ public partial class Usuario
 
     public string? Contraseña { get; set; }
 
-    public string MetodoLogin { get; set; } = null!;
+    public string? MetodoLogin { get; set; } = null!;
 
     public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
 
