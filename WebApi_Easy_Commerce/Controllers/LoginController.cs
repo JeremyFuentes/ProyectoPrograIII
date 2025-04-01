@@ -134,8 +134,8 @@ namespace WebApi_Easy_Commerce.Controllers
                 return BadRequest(new { mensaje = ex.Message });
             }
         }
-
-
         #endregion
+
+
     }
 }

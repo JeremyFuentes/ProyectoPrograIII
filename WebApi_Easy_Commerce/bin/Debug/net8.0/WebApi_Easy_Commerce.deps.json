@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "WebApi_Easy_Commerce/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Google": "8.0.14",
           "ProyectoPrograIII": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -47,6 +48,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/8.0.14": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "8.0.14.0",
+            "fileVersion": "8.0.1425.11221"
           }
         }
       },
@@ -664,6 +673,7 @@
       },
       "ProyectoPrograIII/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Google": "8.0.14",
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
         },
@@ -695,6 +705,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/8.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axujMsBY1MH10fkuQvD7aOYJiW+eMugitsmsm5APnJGZxoSKTq/N3I2S2zn7HBA8Tzb006ixRYuMHH/AKJlZJw==",
+      "path": "microsoft.aspnetcore.authentication.google/8.0.14",
+      "hashPath": "microsoft.aspnetcore.authentication.google.8.0.14.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

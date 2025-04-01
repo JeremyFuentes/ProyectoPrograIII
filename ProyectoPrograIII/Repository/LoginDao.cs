@@ -160,5 +160,41 @@ namespace ProyectoPrograIII.Repository
         }
 
         #endregion
+
+        public Usuario AutenticarConGoogle(string googleId, string email, string nombre)
+        {
+            // Buscar usuario en la base de datos por GoogleId
+            var usuario = contexto.Usuarios.FirstOrDefault(u => u.GoogleId == googleId);
+
+            if (usuario == null)
+            {
+                // Si no existe, verificar si ya está registrado con su email
+                usuario = contexto.Usuarios.FirstOrDefault(u => u.Correo == email);
+
+                if (usuario == null)
+                {
+                    // Crear nuevo usuario si no existe
+                    usuario = new Usuario
+                    {
+                        GoogleId = googleId,
+                        Correo = email,
+                        Nombre = nombre,
+                        MetodoLogin = "Google"
+                    };
+
+                    contexto.Usuarios.Add(usuario);
+                    contexto.SaveChanges();
+                }
+                else
+                {
+                    // Si el usuario ya existe con su correo pero no tenía GoogleId, actualizarlo
+                    usuario.GoogleId = googleId;
+                    usuario.MetodoLogin = "Google";
+                    contexto.SaveChanges();
+                }
+            }
+
+            return usuario; // Devolver usuario autenticado
+        }
     }
 }
