@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ProyectoPrograIII.Models;
 using ProyectoPrograIII.Repository;
+using Google.Apis.Auth;
+using Microsoft.SqlServer.Server;
 
 namespace WebApi_Easy_Commerce.Controllers
 {
@@ -46,7 +48,7 @@ namespace WebApi_Easy_Commerce.Controllers
                 return NotFound("Usuario no encontrado");
             }
 
-            return Ok(new { usuario.Correo, usuario.Contraseña });
+            return Ok(new { usuario.Correo, usuario.UsuarioId});
         }
         #endregion
 
@@ -136,6 +138,34 @@ namespace WebApi_Easy_Commerce.Controllers
         }
         #endregion
 
+        #region LoginGoogle
+        [HttpPost("AutenticarGoogle")]
+        public async Task<IActionResult> AutenticarConGoogle([FromBody] string idToken)
+        {
+            try
+            {
+                var payload = await GoogleJsonWebSignature.ValidateAsync(idToken);
 
+                var usuario = _loginDao.AutenticarConGoogle(
+                    payload.Subject,   // GoogleId
+                    payload.Email,
+                    payload.Name
+                );
+
+                return Ok(new
+                {
+                    mensaje = "Autenticación con Google exitosa",
+                    usuarioId = usuario.UsuarioId,
+                    nombre = usuario.Nombre,
+                    correo = usuario.Correo,
+                    metodo = usuario.MetodoLogin
+                });
+            }
+            catch (InvalidJwtException ex)
+            {
+                return Unauthorized(new { mensaje = "Token inválido o expirado", error = ex.Message });
+            }
+            #endregion
+        }
     }
 }

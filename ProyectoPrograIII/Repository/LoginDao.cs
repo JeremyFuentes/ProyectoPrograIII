@@ -1,4 +1,5 @@
-﻿using ProyectoPrograIII.Context;
+﻿using Microsoft.AspNetCore.Identity;
+using ProyectoPrograIII.Context;
 using ProyectoPrograIII.Models;
 using System;
 using System.Collections.Generic;
@@ -51,7 +52,7 @@ namespace ProyectoPrograIII.Repository
                     Contacto = usuario.Contacto,
                     Correo = usuario.Correo,
                     GoogleId = usuario.GoogleId,
-                    Contraseña = usuario.Contraseña,
+                    Contraseña = new PasswordHasher<Usuario>().HashPassword(usuario, usuario.Contraseña),
                     MetodoLogin = usuario.MetodoLogin
                 };
                 contexto.Usuarios.Add(user);
@@ -129,8 +130,15 @@ namespace ProyectoPrograIII.Repository
         #region Auntentificacion
         public Usuario login(string correo, string contraseña)
         {
-            var login = contexto.Usuarios.FirstOrDefault(p => p.Correo == correo && p.Contraseña == contraseña);
-            return login;
+            var usuario = contexto.Usuarios.FirstOrDefault(p => p.Correo == correo);
+
+            if (usuario == null)
+                return null;
+
+            var hasher = new PasswordHasher<Usuario>();
+            var resultado = hasher.VerifyHashedPassword(usuario, usuario.Contraseña, contraseña);
+
+            return resultado == PasswordVerificationResult.Success ? usuario : null;
         }
         #endregion
 
@@ -161,19 +169,20 @@ namespace ProyectoPrograIII.Repository
 
         #endregion
 
+        #region Login Google
         public Usuario AutenticarConGoogle(string googleId, string email, string nombre)
         {
-            // Buscar usuario en la base de datos por GoogleId
+            // Buscar por GoogleId
             var usuario = contexto.Usuarios.FirstOrDefault(u => u.GoogleId == googleId);
 
             if (usuario == null)
             {
-                // Si no existe, verificar si ya está registrado con su email
+                // Si no tiene GoogleId, buscar por correo (puede que haya iniciado antes por otro método)
                 usuario = contexto.Usuarios.FirstOrDefault(u => u.Correo == email);
 
                 if (usuario == null)
                 {
-                    // Crear nuevo usuario si no existe
+                    // Crear nuevo usuario
                     usuario = new Usuario
                     {
                         GoogleId = googleId,
@@ -187,14 +196,15 @@ namespace ProyectoPrograIII.Repository
                 }
                 else
                 {
-                    // Si el usuario ya existe con su correo pero no tenía GoogleId, actualizarlo
+                    // Si existe con el correo pero no tiene GoogleId, lo actualizamos
                     usuario.GoogleId = googleId;
                     usuario.MetodoLogin = "Google";
                     contexto.SaveChanges();
                 }
             }
 
-            return usuario; // Devolver usuario autenticado
+            return usuario;
         }
+        #endregion
     }
 }

@@ -5,6 +5,193 @@
     "version": "1.0"
   },
   "paths": {
+    "/favoritos": {
+      "get": {
+        "tags": [
+          "Favoritos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Favoritos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/ObtenerporID/{id}": {
+      "get": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/usuario/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/EliminarporId/{id}": {
+      "delete": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/imagenesProducto/producto/{productoId}": {
+      "get": {
+        "tags": [
+          "ImagenesProducto"
+        ],
+        "parameters": [
+          {
+            "name": "productoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/imagenesProducto/InsertarImagen": {
+      "post": {
+        "tags": [
+          "ImagenesProducto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImagenesProducto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImagenesProducto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImagenesProducto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/imagenesProducto/Eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "ImagenesProducto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ObtenerTodosUsuarios": {
       "get": {
         "tags": [
@@ -230,6 +417,455 @@
       "get": {
         "tags": [
           "Login"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AutenticarGoogle": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/ObtenerTodos": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/ObtenerporId/{id}": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/marca/{marcaId}": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "parameters": [
+          {
+            "name": "marcaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/usuario/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/nombre/{nombre}": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "parameters": [
+          {
+            "name": "nombre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/InsertarProducto": {
+      "post": {
+        "tags": [
+          "Productos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Producto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Producto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Producto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/RegistrarConImagenes": {
+      "post": {
+        "tags": [
+          "Productos"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ProductoId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Nombre": {
+                    "type": "string"
+                  },
+                  "Precio": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Stock": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "CategoriaId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Sku": {
+                    "type": "string"
+                  },
+                  "Descripcion": {
+                    "type": "string"
+                  },
+                  "MarcaId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ProveedorId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Estado": {
+                    "type": "boolean"
+                  },
+                  "Categoria.CategoriaId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Categoria.Nombre": {
+                    "type": "string"
+                  },
+                  "Categoria.Descripcion": {
+                    "type": "string"
+                  },
+                  "Categoria.Productos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Producto"
+                    }
+                  },
+                  "Categoria.Servicios": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Servicio"
+                    }
+                  },
+                  "Comentarios": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Comentario"
+                    }
+                  },
+                  "DetalleFacturas": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/DetalleFactura"
+                    }
+                  },
+                  "Favoritos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Favorito"
+                    }
+                  },
+                  "Marca.MarcaId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Marca.Nombre": {
+                    "type": "string"
+                  },
+                  "Marca.Productos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Producto"
+                    }
+                  },
+                  "Promociones": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Promocione"
+                    }
+                  },
+                  "Proveedor.ProveedorId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Proveedor.Nombre": {
+                    "type": "string"
+                  },
+                  "Proveedor.Contacto": {
+                    "type": "string"
+                  },
+                  "Proveedor.Correo": {
+                    "type": "string"
+                  },
+                  "Proveedor.Productos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Producto"
+                    }
+                  },
+                  "imagenes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "ProductoId": {
+                  "style": "form"
+                },
+                "Nombre": {
+                  "style": "form"
+                },
+                "Precio": {
+                  "style": "form"
+                },
+                "Stock": {
+                  "style": "form"
+                },
+                "CategoriaId": {
+                  "style": "form"
+                },
+                "Sku": {
+                  "style": "form"
+                },
+                "Descripcion": {
+                  "style": "form"
+                },
+                "MarcaId": {
+                  "style": "form"
+                },
+                "ProveedorId": {
+                  "style": "form"
+                },
+                "Estado": {
+                  "style": "form"
+                },
+                "Categoria.CategoriaId": {
+                  "style": "form"
+                },
+                "Categoria.Nombre": {
+                  "style": "form"
+                },
+                "Categoria.Descripcion": {
+                  "style": "form"
+                },
+                "Categoria.Productos": {
+                  "style": "form"
+                },
+                "Categoria.Servicios": {
+                  "style": "form"
+                },
+                "Comentarios": {
+                  "style": "form"
+                },
+                "DetalleFacturas": {
+                  "style": "form"
+                },
+                "Favoritos": {
+                  "style": "form"
+                },
+                "Marca.MarcaId": {
+                  "style": "form"
+                },
+                "Marca.Nombre": {
+                  "style": "form"
+                },
+                "Marca.Productos": {
+                  "style": "form"
+                },
+                "Promociones": {
+                  "style": "form"
+                },
+                "Proveedor.ProveedorId": {
+                  "style": "form"
+                },
+                "Proveedor.Nombre": {
+                  "style": "form"
+                },
+                "Proveedor.Contacto": {
+                  "style": "form"
+                },
+                "Proveedor.Correo": {
+                  "style": "form"
+                },
+                "Proveedor.Productos": {
+                  "style": "form"
+                },
+                "imagenes": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/ActualizarProducto": {
+      "put": {
+        "tags": [
+          "Productos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Producto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Producto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Producto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/EliminarporId/{id}": {
+      "delete": {
+        "tags": [
+          "Productos"
         ],
         "parameters": [
           {
@@ -504,6 +1140,34 @@
           },
           "usuario": {
             "$ref": "#/components/schemas/Usuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ImagenesProducto": {
+        "type": "object",
+        "properties": {
+          "imagenId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "urlImagen": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "esPrincipal": {
+            "type": "boolean"
+          },
+          "producto": {
+            "$ref": "#/components/schemas/Producto"
           }
         },
         "additionalProperties": false
