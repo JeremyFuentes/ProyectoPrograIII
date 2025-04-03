@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProyectoPrograIII.Context;
 using ProyectoPrograIII.Models;
 using ProyectoPrograIII.Repository;
 
@@ -9,7 +10,12 @@ namespace WebApi_Easy_Commerce.Controllers
     [ApiController]
     public class FavoritosController : ControllerBase
     {
-        private readonly FavoritoDao _dao = new FavoritoDao();
+        private readonly FavoritoDao _dao;
+
+        public FavoritosController(ProyectoProgra3Context contexto)
+        {
+            _dao = new FavoritoDao(contexto);
+        }
 
         #region Obtener todos los favoritos
         [HttpGet]
@@ -17,7 +23,7 @@ namespace WebApi_Easy_Commerce.Controllers
         #endregion
 
         #region Obtener favorito por ID
-        [HttpGet("ObtenerporID/{id}")]
+        [HttpGet("obtenerFavorito/{id}")]
         public IActionResult GetById(int id)
         {
             var fav = _dao.GetById(id);
@@ -30,20 +36,58 @@ namespace WebApi_Easy_Commerce.Controllers
         public IActionResult GetPorUsuario(int usuarioId) => Ok(_dao.GetFavoritosPorUsuario(usuarioId));
         #endregion
 
-        #region Insertar favorito
-        [HttpPost]
-        public IActionResult Insertar([FromBody] Favorito favorito)
+
+        [HttpPost("Agregar")]
+        public IActionResult AgregarAFavoritos([FromBody] Favorito favorito)
         {
-            return _dao.Insertar(favorito) ? Ok("Favorito agregado") : BadRequest("Error al insertar");
+            var resultado = _dao.Agregar(favorito); // Devuelve true/false
+
+            if (resultado)
+                return Ok(new { mensaje = "Agregado" });
+            else
+                return BadRequest(new { mensaje = "Error al agregar" });
+        }
+
+        [HttpDelete("Eliminar")]
+        public IActionResult EliminarPorUsuarioYProducto([FromBody] Favorito favorito)
+        {
+            if (favorito.UsuarioId == null || favorito.ProductoId == null)
+                return BadRequest(new { mensaje = "Datos inválidos" });
+
+            var resultado = _dao.EliminarPorUsuarioYProducto(favorito.UsuarioId.Value, favorito.ProductoId.Value);
+
+            return resultado
+                ? Ok(new { mensaje = "Favorito eliminado" })
+                : NotFound(new { mensaje = "Favorito no encontrado" });
+        }
+
+        #region Eliminar favorito
+        [HttpDelete("Eliminarfavorito/{id}")]
+        public IActionResult Eliminar(int id)
+        {
+            return _dao.Eliminar(id)
+    ? Ok(new { mensaje = "Favorito eliminado" })
+    : NotFound(new { mensaje = "Favorito no encontrado" });
         }
         #endregion
 
-        #region Eliminar favorito
-        [HttpDelete("EliminarporId/{id}")]
-        public IActionResult Eliminar(int id)
+        [HttpGet("ConProductoPorUsuario/{usuarioId}")]
+        public IActionResult GetFavoritosConProductoPorUsuario(int usuarioId)
         {
-            return _dao.Eliminar(id) ? Ok("Favorito eliminado") : NotFound("Favorito no encontrado");
+            try
+            {
+                Console.WriteLine($"🔍 Obteniendo favoritos del usuario {usuarioId}");
+                var favoritos = _dao.GetFavoritosConProductoPorUsuario(usuarioId);
+                Console.WriteLine($"✅ Se encontraron {favoritos.Count} favoritos.");
+                return Ok(favoritos);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error en el controller: {ex.Message}");
+                return StatusCode(500, new { mensaje = "Error interno", detalle = ex.Message });
+            }
         }
-        #endregion
     }
+
+
 }

@@ -5,36 +5,61 @@
     "version": "1.0"
   },
   "paths": {
-    "/favoritos": {
+    "/admin/todos": {
       "get": {
         "tags": [
-          "Favoritos"
+          "Administrador"
         ],
         "responses": {
           "200": {
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/admin/ObtenerporId{id}": {
+      "get": {
+        "tags": [
+          "Administrador"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/admin/crear": {
       "post": {
         "tags": [
-          "Favoritos"
+          "Administrador"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Favorito"
+                "$ref": "#/components/schemas/Administrador"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Favorito"
+                "$ref": "#/components/schemas/Administrador"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Favorito"
+                "$ref": "#/components/schemas/Administrador"
               }
             }
           }
@@ -46,7 +71,140 @@
         }
       }
     },
-    "/favoritos/ObtenerporID/{id}": {
+    "/admin/actualizar": {
+      "put": {
+        "tags": [
+          "Administrador"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/admin/eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "Administrador"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/admin/login": {
+      "post": {
+        "tags": [
+          "Administrador"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Administrador"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/auxiliares/categorias/todas": {
+      "get": {
+        "tags": [
+          "Auxiliar"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/auxiliares/marcas/todas": {
+      "get": {
+        "tags": [
+          "Auxiliar"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/auxiliares/proveedores/todos": {
+      "get": {
+        "tags": [
+          "Auxiliar"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos": {
+      "get": {
+        "tags": [
+          "Favoritos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/obtenerFavorito/{id}": {
       "get": {
         "tags": [
           "Favoritos"
@@ -92,7 +250,69 @@
         }
       }
     },
-    "/favoritos/EliminarporId/{id}": {
+    "/favoritos/Agregar": {
+      "post": {
+        "tags": [
+          "Favoritos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/Eliminar": {
+      "delete": {
+        "tags": [
+          "Favoritos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Favorito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/Eliminarfavorito/{id}": {
       "delete": {
         "tags": [
           "Favoritos"
@@ -100,6 +320,29 @@
         "parameters": [
           {
             "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/favoritos/ConProductoPorUsuario/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Favoritos"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
             "in": "path",
             "required": true,
             "schema": {
@@ -138,7 +381,7 @@
         }
       }
     },
-    "/imagenesProducto/InsertarImagen": {
+    "/imagenesProducto/insertarImagen": {
       "post": {
         "tags": [
           "ImagenesProducto"
@@ -169,7 +412,49 @@
         }
       }
     },
-    "/imagenesProducto/Eliminar/{id}": {
+    "/imagenesProducto/subirVarias": {
+      "post": {
+        "tags": [
+          "ImagenesProducto"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "productoId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "imagenes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "productoId": {
+                  "style": "form"
+                },
+                "imagenes": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/imagenesProducto/eliminarImagen/{id}": {
       "delete": {
         "tags": [
           "ImagenesProducto"
@@ -192,7 +477,53 @@
         }
       }
     },
-    "/api/ObtenerTodosUsuarios": {
+    "/imagenesProducto/marcarComoPrincipal/{idImagen}": {
+      "post": {
+        "tags": [
+          "ImagenesProducto"
+        ],
+        "parameters": [
+          {
+            "name": "idImagen",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/imagenesProducto/establecerPrincipal/{idImagen}": {
+      "put": {
+        "tags": [
+          "ImagenesProducto"
+        ],
+        "parameters": [
+          {
+            "name": "idImagen",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/usuarios/ObtenerTodosUsuarios": {
       "get": {
         "tags": [
           "Login"
@@ -204,7 +535,7 @@
         }
       }
     },
-    "/api/ObetenrUsuarioPorId": {
+    "/usuarios/ObtenerUsuarioPorId": {
       "get": {
         "tags": [
           "Login"
@@ -243,7 +574,7 @@
         }
       }
     },
-    "/api/ObtenerUsuarioPorCorreo": {
+    "/usuarios/ObtenerUsuarioPorCorreo": {
       "get": {
         "tags": [
           "Login"
@@ -264,7 +595,7 @@
         }
       }
     },
-    "/api/CrearUsuario": {
+    "/usuarios/CrearUsuario": {
       "post": {
         "tags": [
           "Login"
@@ -295,7 +626,7 @@
         }
       }
     },
-    "/api/ActualizarUsuario": {
+    "/usuarios/ActualizarUsuario": {
       "put": {
         "tags": [
           "Login"
@@ -343,7 +674,7 @@
         }
       }
     },
-    "/api/EliminarUsuario": {
+    "/usuarios/EliminarUsuario": {
       "delete": {
         "tags": [
           "Login"
@@ -382,7 +713,7 @@
         }
       }
     },
-    "/api/AutenticarUsuario": {
+    "/usuarios/AutenticarUsuario": {
       "post": {
         "tags": [
           "Login"
@@ -413,7 +744,7 @@
         }
       }
     },
-    "/api/ValidarDireccionContacto/{id}": {
+    "/usuarios/ValidarDireccionContacto/{id}": {
       "get": {
         "tags": [
           "Login"
@@ -436,7 +767,7 @@
         }
       }
     },
-    "/api/AutenticarGoogle": {
+    "/usuarios/AutenticarGoogle": {
       "post": {
         "tags": [
           "Login"
@@ -701,6 +1032,12 @@
                       "$ref": "#/components/schemas/Producto"
                     }
                   },
+                  "ImagenesProducto": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/ImagenesProducto"
+                    }
+                  },
                   "Promociones": {
                     "type": "array",
                     "items": {
@@ -799,6 +1136,9 @@
                 "Marca.Productos": {
                   "style": "form"
                 },
+                "ImagenesProducto": {
+                  "style": "form"
+                },
                 "Promociones": {
                   "style": "form"
                 },
@@ -884,10 +1224,50 @@
           }
         }
       }
+    },
+    "/productos/conImagenPrincipal": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "Administrador": {
+        "required": [
+          "contrasenaHash",
+          "correo"
+        ],
+        "type": "object",
+        "properties": {
+          "idAdmin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "correo": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "contrasenaHash": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "Categorium": {
         "type": "object",
         "properties": {
@@ -1147,7 +1527,7 @@
       "ImagenesProducto": {
         "type": "object",
         "properties": {
-          "imagenId": {
+          "idImagen": {
             "type": "integer",
             "format": "int32"
           },
@@ -1156,18 +1536,17 @@
             "format": "int32"
           },
           "urlImagen": {
+            "maxLength": 500,
             "type": "string",
             "nullable": true
           },
           "descripcion": {
+            "maxLength": 255,
             "type": "string",
             "nullable": true
           },
           "esPrincipal": {
             "type": "boolean"
-          },
-          "producto": {
-            "$ref": "#/components/schemas/Producto"
           }
         },
         "additionalProperties": false
@@ -1267,6 +1646,13 @@
           },
           "marca": {
             "$ref": "#/components/schemas/Marca"
+          },
+          "imagenesProducto": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImagenesProducto"
+            },
+            "nullable": true
           },
           "promociones": {
             "type": "array",

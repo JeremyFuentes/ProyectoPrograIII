@@ -3,15 +3,25 @@ using Microsoft.AspNetCore.Mvc;
 using ProyectoPrograIII.Models;
 using ProyectoPrograIII.Repository;
 using Google.Apis.Auth;
+using ProyectoPrograIII.Context;
 using Microsoft.SqlServer.Server;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApi_Easy_Commerce.Controllers
 {
-    [Route("api")]
+    [Route("usuarios")]
     [ApiController]
     public class LoginController : ControllerBase
     {
         private LoginDao _loginDao = new LoginDao();
+
+        private readonly ProyectoProgra3Context _context;
+
+        public LoginController(ProyectoProgra3Context context)
+        {
+            _context = context;
+        }
+
 
         #region Seleecionar Todos
         [HttpGet("ObtenerTodosUsuarios")]
@@ -29,7 +39,7 @@ namespace WebApi_Easy_Commerce.Controllers
         #endregion
 
         #region ObtenerPorId
-        [HttpGet("ObetenrUsuarioPorId")]
+        [HttpGet("ObtenerUsuarioPorId")]
         public Usuario seletById(int id)
         {
             var alumno = _loginDao.GetById(id);
@@ -90,24 +100,17 @@ namespace WebApi_Easy_Commerce.Controllers
 
         #region Autentificacion Login
         [HttpPost("AutenticarUsuario")]
-        public IActionResult AutenticarUsuario([FromBody] Usuario usuario)
+        public IActionResult AutenticarUsuario([FromBody] Usuario usuarioLogin)
         {
-            if (string.IsNullOrEmpty(usuario.Correo) || string.IsNullOrEmpty(usuario.Contraseña))
-            {
-                return BadRequest("Correo y contraseña son obligatorios.");
-            }
+            var usuario = _loginDao.login(usuarioLogin.Correo, usuarioLogin.Contraseña);
 
-            var usuarioAutenticado = _loginDao.login(usuario.Correo, usuario.Contraseña);
-
-            if (usuarioAutenticado == null)
-            {
-                return Unauthorized("Credenciales incorrectas.");
-            }
+            if (usuario == null)
+                return Unauthorized("Credenciales incorrectas");
 
             return Ok(new
             {
-                mensaje = "Autenticación exitosa",
-                correo = usuarioAutenticado.UsuarioId,
+                idUsuario = usuario.UsuarioId,
+                nombre = usuario.Nombre
             });
         }
         #endregion

@@ -106,3 +106,4 @@ C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\Ti
 C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\WebApi_Easy_Commerce\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\WebApi_Easy_Commerce\bin\Debug\net8.0\System.Management.dll
 C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\WebApi_Easy_Commerce\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\jerem\Desktop\Universidad\Ciclo V\Programacion III\Proyecto de Ciclo\TiendaElectronica\WebApi_Easy_Commerce\bin\Debug\net8.0\WebApi_Easy_Commerce.staticwebassets.runtime.json

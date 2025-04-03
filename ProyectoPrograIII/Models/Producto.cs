@@ -35,6 +35,8 @@ public partial class Producto
 
     public virtual Marca? Marca { get; set; }
 
+    public virtual ICollection<ImagenesProducto> ImagenesProducto { get; set; } = new List<ImagenesProducto>();
+
     public virtual ICollection<Promocione> Promociones { get; set; } = new List<Promocione>();
 
     public virtual Proveedore? Proveedor { get; set; }

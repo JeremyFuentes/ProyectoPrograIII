@@ -60,7 +60,7 @@ namespace ProyectoPrograIII.Repository
                     Precio = producto.Precio,
                     Stock = producto.Stock,
                     CategoriaId = producto.CategoriaId,
-                    Sku = producto.Sku,
+                    Sku = GenerarSku(),
                     Descripcion = producto.Descripcion,
                     MarcaId = producto.MarcaId,
                     ProveedorId = producto.ProveedorId,
@@ -74,6 +74,21 @@ namespace ProyectoPrograIII.Repository
             }
             catch { return false; }
         }
+
+        private string GenerarSku()
+        {
+            string fecha = DateTime.Now.ToString("yyyyMMdd");
+            int contador = 1;
+            string sku;
+
+            do
+            {
+                sku = $"PRD-{fecha}-{contador:D3}";
+                contador++;
+            } while (contexto.Productos.Any(p => p.Sku == sku));
+
+            return sku;
+        }
         #endregion
 
         #region Actualizar producto
@@ -86,7 +101,6 @@ namespace ProyectoPrograIII.Repository
             productoExistente.Precio = producto.Precio;
             productoExistente.Stock = producto.Stock;
             productoExistente.CategoriaId = producto.CategoriaId;
-            productoExistente.Sku = producto.Sku;
             productoExistente.Descripcion = producto.Descripcion;
             productoExistente.MarcaId = producto.MarcaId;
             productoExistente.ProveedorId = producto.ProveedorId;
@@ -103,7 +117,24 @@ namespace ProyectoPrograIII.Repository
             var producto = GetById(id);
             if (producto == null) return false;
 
+            // Obtener imágenes asociadas
+            var imagenes = contexto.ImagenesProducto.Where(img => img.ProductoId == id).ToList();
+
+            foreach (var img in imagenes)
+            {
+                var rutaFisica = Path.Combine("wwwroot", img.UrlImagen.TrimStart('/').Replace('/', Path.DirectorySeparatorChar));
+                if (File.Exists(rutaFisica))
+                {
+                    File.Delete(rutaFisica);
+                }
+            }
+
+            // Eliminar registros de imágenes
+            contexto.ImagenesProducto.RemoveRange(imagenes);
+
+            // Eliminar el producto
             contexto.Productos.Remove(producto);
+
             contexto.SaveChanges();
             return true;
         }

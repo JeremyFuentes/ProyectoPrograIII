@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ProyectoPrograIII.Context;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +20,18 @@ builder.Services.AddCors(options =>
     });
 });
 
-// 3️⃣ Servicios básicos
-builder.Services.AddControllers();
+// 3️⃣ Controladores + serialización JSON segura
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+        x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+// 4️⃣ Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// 4️⃣ Middleware
+// 5️⃣ Middleware
 app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
@@ -35,11 +40,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// 5️⃣ Routing
-app.UseRouting();
+// 🟢 Sirve archivos estáticos desde wwwroot
+app.UseStaticFiles();
 
-// 🔐 No necesitas .UseAuthentication() ni .UseAuthorization()
-// a menos que uses JWT u otro esquema más adelante
+app.UseRouting();
 
 app.UseHttpsRedirection();
 

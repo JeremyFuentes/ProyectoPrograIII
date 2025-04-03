@@ -32,12 +32,8 @@ namespace ProyectoPrograIII.Repository
         #endregion
 
         #region Obtener por Corroo
-        public Usuario? GetByCorreo(string correo)
-        {
-            var usuario = contexto.Usuarios.Where(x => x.Correo == correo).FirstOrDefault();
-
-            return usuario == null ? null : usuario;
-        }
+        public Usuario? GetByCorreo(string correo) => 
+            contexto.Usuarios.FirstOrDefault(a => a.Correo == correo);
         #endregion
 
         #region Insertar
@@ -86,8 +82,14 @@ namespace ProyectoPrograIII.Repository
                 usuarioUpdate.Contacto = actualizar.Contacto;
                 usuarioUpdate.Correo = actualizar.Correo;
                 usuarioUpdate.GoogleId = actualizar.GoogleId;
-                usuarioUpdate.Contraseña = actualizar.Contraseña;
                 usuarioUpdate.MetodoLogin = actualizar.MetodoLogin;
+
+                // Solo rehashear si cambió la contraseña
+                if (!string.IsNullOrWhiteSpace(actualizar.Contraseña))
+                {
+                    var hasher = new PasswordHasher<Usuario>();
+                    usuarioUpdate.Contraseña = hasher.HashPassword(usuarioUpdate, actualizar.Contraseña);
+                }
 
                 contexto.Usuarios.Update(usuarioUpdate);
                 contexto.SaveChanges();
@@ -130,15 +132,16 @@ namespace ProyectoPrograIII.Repository
         #region Auntentificacion
         public Usuario login(string correo, string contraseña)
         {
-            var usuario = contexto.Usuarios.FirstOrDefault(p => p.Correo == correo);
-
+            var usuario = contexto.Usuarios.FirstOrDefault(u => u.Correo == correo);
             if (usuario == null)
                 return null;
 
             var hasher = new PasswordHasher<Usuario>();
-            var resultado = hasher.VerifyHashedPassword(usuario, usuario.Contraseña, contraseña);
+            var result = hasher.VerifyHashedPassword(usuario, usuario.Contraseña, contraseña);
 
-            return resultado == PasswordVerificationResult.Success ? usuario : null;
+            Console.WriteLine($"[DEBUG] Verificación: {result}");
+
+            return result == PasswordVerificationResult.Success ? usuario : null;
         }
         #endregion
 

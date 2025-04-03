@@ -11,13 +11,25 @@ namespace ProyectoPrograIII.Repository
     public class ImagenesProductoDao
     {
         #region Contexto
-        private readonly ProyectoProgra3Context contexto = new ProyectoProgra3Context();
+        private readonly ProyectoProgra3Context contexto;
+
+        public ImagenesProductoDao(ProyectoProgra3Context contexto)
+        {
+            this.contexto = contexto;
+        }
         #endregion
 
         #region Obtener imágenes por ProductoID
         public List<ImagenesProducto> GetByProducto(int productoId)
         {
             return contexto.ImagenesProducto.Where(i => i.ProductoId == productoId).ToList();
+        }
+        #endregion
+
+        #region Obtener imagen por ID
+        public ImagenesProducto? GetById(int id)
+        {
+            return contexto.ImagenesProducto.FirstOrDefault(i => i.IdImagen == id);
         }
         #endregion
 
@@ -45,6 +57,19 @@ namespace ProyectoPrograIII.Repository
             return true;
         }
         #endregion
-    }
 
+        #region Marcar como principal
+        public bool MarcarComoPrincipal(int productoId, int nuevaPrincipalId)
+        {
+            var imagenes = contexto.ImagenesProducto.Where(i => i.ProductoId == productoId).ToList();
+            if (!imagenes.Any()) return false;
+
+            foreach (var img in imagenes)
+                img.EsPrincipal = img.IdImagen == nuevaPrincipalId;
+
+            contexto.SaveChanges();
+            return true;
+        }
+        #endregion
+    }
 }

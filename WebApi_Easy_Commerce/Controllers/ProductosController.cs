@@ -77,8 +77,9 @@ namespace WebApi_Easy_Commerce.Controllers
             if (!resultado) return BadRequest("Error al insertar el producto");
 
             // Guardar imágenes
-            foreach (var imagen in imagenes)
+            for (int i = 0; i < imagenes.Count; i++)
             {
+                var imagen = imagenes[i];
                 if (imagen.Length > 0)
                 {
                     var nombreArchivo = $"{Guid.NewGuid()}_{imagen.FileName}";
@@ -94,17 +95,19 @@ namespace WebApi_Easy_Commerce.Controllers
                     {
                         ProductoId = producto.ProductoId, // ya fue insertado
                         UrlImagen = $"/imagenes/{nombreArchivo}",
-                        EsPrincipal = false
+                        EsPrincipal = (i == 0) // Marcar la primera como principal
                     };
 
                     _contexto.ImagenesProducto.Add(imagenProducto);
                 }
             }
-
+            Console.WriteLine($"Producto recibido: {producto.Nombre} - {producto.Precio}");
+            Console.WriteLine($"Cantidad de imágenes recibidas: {imagenes.Count}");
             _contexto.SaveChanges();
             return Ok("Producto y sus imágenes guardados correctamente");
         }
         #endregion
+
 
         #region Actualizar producto
         [HttpPut("ActualizarProducto")]
@@ -119,6 +122,26 @@ namespace WebApi_Easy_Commerce.Controllers
         public IActionResult Eliminar(int id)
         {
             return _dao.Eliminar(id) ? Ok("Producto eliminado") : NotFound("Producto no encontrado");
+        }
+        #endregion
+
+        #region Obtener Productos para vista
+        [HttpGet("conImagenPrincipal")]
+        public IActionResult GetProductosConImagen()
+        {
+            var productos = _contexto.Productos
+                .Select(p => new
+                {
+                    p.ProductoId,
+                    p.Nombre,
+                    p.Precio,
+                    Imagen = _contexto.ImagenesProducto
+                        .Where(img => img.ProductoId == p.ProductoId && img.EsPrincipal)
+                        .Select(img => img.UrlImagen)
+                        .FirstOrDefault()
+                }).ToList();
+
+            return Ok(productos);
         }
         #endregion
     }
