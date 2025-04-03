@@ -46,6 +46,7 @@ Antes de compilar el proyecto asegúrate de tener instaladas las siguientes depe
 │   ├── Program.cs          → Configuración principal de la API (middlewares, routing, servicios)
 │   ├── appsettings.json    → Configuración de conexión y variables de entorno
 │   └── WebApi_Easy_Commerce.http → Archivo para pruebas de endpoints desde Visual Studio
+
 ---
 
 ## 🔑 Endpoints Clave
