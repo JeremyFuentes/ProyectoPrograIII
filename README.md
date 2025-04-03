@@ -32,20 +32,35 @@ Antes de compilar el proyecto asegúrate de tener instaladas las siguientes depe
 ## 📁 Estructura del Proyecto
 
 📁 Solución "TiendaElectronica"
+/ProyectoPrograIII
 │
-├── 📦 ProyectoPrograIII
-│   ├── 📁 Context/         → Contexto de Entity Framework (DbContext)
-│   ├── 📁 Models/          → Clases de entidades (Usuario, Producto, ImagenesProducto, etc.)
-│   ├── 📁 Repository/      → DAOs con lógica de acceso a datos (FavoritoDao, ProductoDao, etc.)
-│   └── Class1.cs
+├── Context/
+│   └── ProyectoProgra3Context.cs (contexto de Entity Framework)
 │
-├── 📦 WebApi_Easy_Commerce
-│   ├── 📁 Controllers/     → Controladores principales de la API (ProductosController, LoginController, etc.)
-│   ├── 📁 wwwroot/
-│   │   └── 📁 imagenes/     → Carpeta donde se almacenan las imágenes subidas por los productos
-│   ├── Program.cs          → Configuración principal de la API (middlewares, routing, servicios)
-│   ├── appsettings.json    → Configuración de conexión y variables de entorno
-│   └── WebApi_Easy_Commerce.http → Archivo para pruebas de endpoints desde Visual Studio
+├── Models/
+│   └── Clases de entidades (Usuario, Producto, ImagenesProducto, Favorito, Administrador, etc.)
+│
+├── Repository/
+│   └── DAOs (LoginDao, ProductoDao, FavoritoDao, ImagenesProductoDao, etc.)
+│
+└── Class1.cs (archivo base o auxiliar)
+
+/WebApi_Easy_Commerce
+│
+├── wwwroot/
+│   └── imagenes/ (almacenamiento estático de imágenes de productos)
+│
+├── Controllers/
+│   ├── ProductosController.cs
+│   ├── LoginController.cs
+│   ├── ImagenesProductoController.cs
+│   ├── FavoritosController.cs
+│   ├── AuxiliarController.cs
+│   └── AdministradorController.cs
+│
+├── appsettings.json (configuración general del proyecto)
+├── Program.cs (punto de entrada de la aplicación)
+└── WebApi_Easy_Commerce.http (archivo de pruebas para endpoints HTTP)
 
 ---
 
