@@ -27,10 +27,9 @@ Antes de compilar el proyecto asegúrate de tener instaladas las siguientes depe
 > Este proyecto utiliza la versión **8.0.14** del paquete `Microsoft.AspNetCore.Authentication.Google` por motivos de compatibilidad con ASP.NET Core 8 y la configuración general del entorno de desarrollo.  
 > Si estás trabajando con una versión más reciente de ASP.NET, asegúrate de revisar los cambios en las políticas de autenticación OAuth.
 
----
 
 ## 📁 Estructura del Proyecto
-
+```
 📁 Solución "TiendaElectronica"
 /ProyectoPrograIII
 │
@@ -61,8 +60,7 @@ Antes de compilar el proyecto asegúrate de tener instaladas las siguientes depe
 ├── appsettings.json (configuración general del proyecto)
 ├── Program.cs (punto de entrada de la aplicación)
 └── WebApi_Easy_Commerce.http (archivo de pruebas para endpoints HTTP)
-
----
+```
 
 ## 🔑 Endpoints Clave
 
