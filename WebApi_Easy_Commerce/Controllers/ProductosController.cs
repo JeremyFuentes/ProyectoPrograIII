@@ -108,7 +108,6 @@ namespace WebApi_Easy_Commerce.Controllers
         }
         #endregion
 
-
         #region Actualizar producto
         [HttpPut("ActualizarProducto")]
         public IActionResult Actualizar([FromBody] Producto producto)

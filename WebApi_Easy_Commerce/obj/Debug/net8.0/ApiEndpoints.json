@@ -120,6 +120,123 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "ActualizarCantidad",
+    "RelativePath": "carrito/actualizarCantidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carritoId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "cantidad",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "AgregarProducto",
+    "RelativePath": "carrito/Agregar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ProyectoPrograIII.Models.Carrito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "ConfirmarCompra",
+    "RelativePath": "carrito/ConfirmarCompra/{usuarioId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "Eliminar",
+    "RelativePath": "carrito/eliminar/{carritoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carritoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "EliminarPorUsuarioYProducto",
+    "RelativePath": "carrito/eliminarProducto",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carrito",
+        "Type": "ProyectoPrograIII.Models.Carrito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "GetHistorial",
+    "RelativePath": "carrito/historial/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "GetPorUsuario",
+    "RelativePath": "carrito/usuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApi_Easy_Commerce.Controllers.FavoritosController",
     "Method": "GetAll",
     "RelativePath": "favoritos",

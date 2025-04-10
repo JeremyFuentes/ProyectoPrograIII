@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3N90cxIMICPB7lbWKOkqM6ztdbzKCr39W7jVPYEYVKU=",
+  "Hash": "KhLeIsPdTpf8G0t1jzDNezqA4tAB5X2PshsExTnRLSs=",
   "Source": "WebApi_Easy_Commerce",
   "BasePath": "_content/WebApi_Easy_Commerce",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
       "SourceId": "WebApi_Easy_Commerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\",
       "BasePath": "_content/WebApi_Easy_Commerce",
-      "RelativePath": "imagenes/11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_#[.{fingerprint}]?.jpg",
+      "RelativePath": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,40 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7mwbcf24eh",
-      "Integrity": "IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=",
+      "Fingerprint": "acj3svztjb",
+      "Integrity": "qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagenes\\11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg"
+      "OriginalItemSpec": "wwwroot\\imagenes\\39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png"
     },
     {
-      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
+      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
       "SourceId": "WebApi_Easy_Commerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\",
       "BasePath": "_content/WebApi_Easy_Commerce",
-      "RelativePath": "imagenes/42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ur4xow9teq",
-      "Integrity": "lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagenes\\42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png"
-    },
-    {
-      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.png",
-      "SourceId": "WebApi_Easy_Commerce",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\",
-      "BasePath": "_content/WebApi_Easy_Commerce",
-      "RelativePath": "imagenes/841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed#[.{fingerprint}]?.png",
+      "RelativePath": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -77,7 +56,7 @@
       "Integrity": "AaGAcZP1SCTNV946sCZYrTeV/knuX3Nl1OdyoGuuS5g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagenes\\841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.png"
+      "OriginalItemSpec": "wwwroot\\imagenes\\75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png"
     },
     {
       "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\db86872c-531b-4742-8608-de7b8cef4185_1024.png",
@@ -99,6 +78,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\db86872c-531b-4742-8608-de7b8cef4185_1024.png"
+    },
+    {
+      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "SourceId": "WebApi_Easy_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\",
+      "BasePath": "_content/WebApi_Easy_Commerce",
+      "RelativePath": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7mwbcf24eh",
+      "Integrity": "IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
+      "SourceId": "WebApi_Easy_Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\",
+      "BasePath": "_content/WebApi_Easy_Commerce",
+      "RelativePath": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ur4xow9teq",
+      "Integrity": "lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png"
     },
     {
       "Identity": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\placeholder.png",
@@ -124,8 +145,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "imagenes/11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.7mwbcf24eh.jpg",
-      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "Route": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.acj3svztjb.png",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -134,19 +155,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "75569"
+          "Value": "434555"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=\""
+          "Value": "\"qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:51:56 GMT"
+          "Value": "Thu, 03 Apr 2025 14:25:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -156,21 +177,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7mwbcf24eh"
+          "Value": "acj3svztjb"
         },
         {
           "Name": "label",
-          "Value": "imagenes/11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg"
+          "Value": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI="
+          "Value": "sha256-qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4="
         }
       ]
     },
     {
-      "Route": "imagenes/11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
-      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\11090ec8-9d5a-49ff-bb4b-c40fe3131e23_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "Route": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -179,19 +200,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "75569"
+          "Value": "434555"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=\""
+          "Value": "\"qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:51:56 GMT"
+          "Value": "Thu, 03 Apr 2025 14:25:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -201,95 +222,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI="
+          "Value": "sha256-qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4="
         }
       ]
     },
     {
-      "Route": "imagenes/42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
-      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "434074"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:33:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk="
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.ur4xow9teq.png",
-      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "434074"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:33:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ur4xow9teq"
-        },
-        {
-          "Name": "label",
-          "Value": "imagenes/42422cac-4831-4abc-a3ac-6048442f6931_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk="
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.png",
-      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.png",
+      "Route": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -310,7 +249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:36:08 GMT"
+          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -325,8 +264,8 @@
       ]
     },
     {
-      "Route": "imagenes/841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.r534qj3ryq.png",
-      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.png",
+      "Route": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.r534qj3ryq.png",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -347,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:36:08 GMT"
+          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -361,7 +300,7 @@
         },
         {
           "Name": "label",
-          "Value": "imagenes/841a3de0-2c7d-479d-8fa8-21688124ef94_unnamed.png"
+          "Value": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png"
         },
         {
           "Name": "integrity",
@@ -448,6 +387,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-kqes9inXKULrtvJ+RUkzNP5kDj9VMquzoE7ECOVseTA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.7mwbcf24eh.jpg",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75569"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 14:24:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7mwbcf24eh"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75569"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 14:24:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "434074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.ur4xow9teq.png",
+      "AssetFile": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "434074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ur4xow9teq"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk="
         }
       ]
     },
