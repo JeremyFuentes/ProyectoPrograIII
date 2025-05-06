@@ -112,3 +112,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
+  window.onload = function () {
+    google.accounts.id.initialize({
+      client_id: '361988047765-qge0f8dh6qff8p7sc1olfp8u1ogsm84c.apps.googleusercontent.com',
+      callback: handleCredentialResponse
+    });
+  
+    google.accounts.id.renderButton(
+      document.getElementById("googleButton"),
+      { theme: "outline", size: "large" }
+    );
+  };
+  
+  async function handleCredentialResponse(response) {
+    console.log("ID Token de Google:", response.credential);
+  
+    try {
+      const res = await fetch("https://localhost:7291/usuarios/AutenticarGoogle", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(response.credential)
+      });
+  
+      if (res.ok) {
+        const data = await res.json();
+        console.log("✅ Login Google exitoso:", data);
+  
+        localStorage.setItem("usuarioId", data.usuarioId);
+        localStorage.setItem("nombreUsuario", data.nombre);
+        localStorage.setItem("token", response.credential);
+  
+        window.location.href = "../html/Usuarios/indexusuario.html";
+      } else {
+        alert("❌ No se pudo autenticar con Google.");
+      }
+    } catch (error) {
+      console.error("Error autenticando con Google:", error);
+    }
+  }
+  
