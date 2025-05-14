@@ -256,3 +256,17 @@ async function vincularGoogle() {
   google.accounts.id.prompt(); // muestra el popup de login Google
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.querySelector(".search-input");
+
+  if (searchInput) {
+    searchInput.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        const termino = this.value.trim();
+        if (termino) {
+          window.location.href = `/html/Usuarios/productosusuario.html?busqueda=${encodeURIComponent(termino)}`;
+        }
+      }
+    });
+  }
+});

@@ -1,3 +1,5 @@
+// productosusuario.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const usuarioId = localStorage.getItem("usuarioId");
   const nombre = localStorage.getItem("nombreUsuario");
@@ -11,16 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("nombreUsuario").textContent = nombre;
 
   cargarFiltros();
-  const params = new URLSearchParams(window.location.search);
-  const categoriaId = params.get("categoria");
-  const marcaId = params.get("marca");
-  cargarProductosConFavoritos({ categoriaId, marcaId });
+  cargarProductosConFavoritos();
 
   document.querySelector(".search-input")?.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
       const valor = e.target.value.trim();
       if (valor) {
-        window.location.href = `productosusuario.html?busqueda=${encodeURIComponent(valor)}`;
+        const params = new URLSearchParams(window.location.search);
+        params.set("busqueda", valor);
+        window.location.href = `productosusuario.html?${params.toString()}`;
       }
     }
   });
@@ -31,24 +32,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("btnAplicarFiltros")?.addEventListener("click", () => {
-    const categoriaId = document.getElementById("filtroCategoria")?.value;
-    const marcaId = document.getElementById("filtroMarca")?.value;
+  const categoriaId = document.getElementById("filtroCategoria")?.value;
+  const marcaId = document.getElementById("filtroMarca")?.value;
+  const precioMax = document.getElementById("filtroPrecio")?.value;
 
-    const params = new URLSearchParams(window.location.search);
-    if (categoriaId) params.set("categoria", categoriaId);
-    else params.delete("categoria");
-    if (marcaId) params.set("marca", marcaId);
-    else params.delete("marca");
+  const params = new URLSearchParams();
+  if (categoriaId) params.set("categoriaId", categoriaId);
+  if (marcaId) params.set("marcaId", marcaId);
+  if (precioMax) params.set("precioMax", precioMax);
 
-    window.location.href = `productosusuario.html?${params.toString()}`;
-  });
+  // 🔥 No copiamos `busqueda` = se limpia al aplicar filtros
+  window.location.href = `productosusuario.html?${params.toString()}`;
+});
+
+
 });
 
 async function cargarFiltros() {
   const categoriaSel = document.getElementById("filtroCategoria");
   const marcaSel = document.getElementById("filtroMarca");
+  const precioInput = document.getElementById("filtroPrecio");
+  const precioSpan = document.getElementById("precioSeleccionado");
 
-  if (!categoriaSel || !marcaSel) return;
+  if (!categoriaSel || !marcaSel || !precioInput || !precioSpan) return;
 
   const [cats, marcas] = await Promise.all([
     fetch("https://localhost:7291/auxiliares/categorias/todas").then(r => r.json()),
@@ -70,33 +76,46 @@ async function cargarFiltros() {
   });
 
   const params = new URLSearchParams(window.location.search);
-  const categoriaActual = params.get("categoria");
-  const marcaActual = params.get("marca");
+  const categoriaActual = params.get("categoriaId");
+  const marcaActual = params.get("marcaId");
+  const precioActual = params.get("precioMax");
+
   if (categoriaActual) categoriaSel.value = categoriaActual;
   if (marcaActual) marcaSel.value = marcaActual;
+  if (precioActual) {
+    precioInput.value = precioActual;
+    precioSpan.textContent = `$${precioActual}`;
+  } else {
+    precioSpan.textContent = `$${precioInput.value}`;
+  }
+
+  precioInput.addEventListener("input", () => {
+    precioSpan.textContent = `$${precioInput.value}`;
+  });
 }
 
-async function cargarProductosConFavoritos(filtros = {}) {
+async function cargarProductosConFavoritos() {
   const container = document.getElementById("productosContainer");
   const usuarioId = localStorage.getItem("usuarioId");
   container.innerHTML = "";
 
-  const { categoriaId, marcaId } = filtros;
   const params = new URLSearchParams(window.location.search);
+  const categoriaId = params.get("categoriaId");
+  const marcaId = params.get("marcaId");
+  const precioMax = params.get("precioMax");
   const busqueda = params.get("busqueda");
 
   let endpoint = "https://localhost:7291/productos/conImagenPrincipal";
 
   if (busqueda) {
     endpoint = `https://localhost:7291/productos/buscarConImagen/${encodeURIComponent(busqueda)}`;
-  } else if (categoriaId && marcaId) {
-    endpoint = `https://localhost:7291/productos/filtrar?categoriaId=${categoriaId}&marcaId=${marcaId}`;
-  } else if (categoriaId) {
-    endpoint = `https://localhost:7291/productos/filtrar?categoriaId=${categoriaId}`;
-  } else if (marcaId) {
-    endpoint = `https://localhost:7291/productos/filtrar?marcaId=${marcaId}`;
+  } else if (categoriaId || marcaId || precioMax) {
+    const queryParams = new URLSearchParams();
+    if (categoriaId) queryParams.set("categoriaId", categoriaId);
+    if (marcaId) queryParams.set("marcaId", marcaId);
+    if (precioMax) queryParams.set("precioMax", precioMax);
+    endpoint = `https://localhost:7291/productos/filtrar?${queryParams.toString()}`;
   }
-
 
   try {
     const [productos, favoritos] = await Promise.all([
@@ -168,7 +187,6 @@ async function cargarProductosConFavoritos(filtros = {}) {
       btn.addEventListener("click", async () => {
         const productoId = parseInt(btn.dataset.productoId);
         const precioUnitario = parseFloat(btn.dataset.precio);
-        const usuarioId = parseInt(localStorage.getItem("usuarioId"));
 
         const res = await fetch(`https://localhost:7291/carrito/Usuario/${usuarioId}`);
         const carrito = await res.json();
@@ -182,9 +200,7 @@ async function cargarProductosConFavoritos(filtros = {}) {
         const agregar = await fetch("https://localhost:7291/carrito/agregar", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            usuarioId, productoId, cantidad: 1, estadoProductoId: 1, precioUnitario
-          })
+          body: JSON.stringify({ usuarioId, productoId, cantidad: 1, estadoProductoId: 1, precioUnitario })
         });
 
         if (agregar.ok) {
@@ -201,9 +217,14 @@ async function cargarProductosConFavoritos(filtros = {}) {
   }
 }
 
-document.getElementById("btnAplicarFiltros")?.addEventListener("click", () => {
-  const categoriaId = document.getElementById("filtroCategoria")?.value;
-  const marcaId = document.getElementById("filtroMarca")?.value;
+document.getElementById("btnEliminarFiltros")?.addEventListener("click", () => {
+  // Eliminar parámetros de la URL
+  const nuevaURL = new URL(window.location.href);
+  nuevaURL.searchParams.delete("categoriaId");
+  nuevaURL.searchParams.delete("marcaId");
+  nuevaURL.searchParams.delete("precioMax");
+  nuevaURL.searchParams.delete("busqueda");
 
-  cargarProductosConFavoritos({ categoriaId, marcaId });
+  // Redireccionar sin filtros
+  window.location.href = nuevaURL.pathname;
 });
