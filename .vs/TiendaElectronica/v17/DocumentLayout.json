@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\repository\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\repository\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\webapi_easy_commerce\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|solutionrelative:webapi_easy_commerce\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\repository\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\repository\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\proyectoprograiii\\repository\\categoriamarcaproveedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65592E55-BB53-434A-9F17-E6B2D929EA2D}|ProyectoPrograIII\\ProyectoPrograIII.csproj|solutionrelative:proyectoprograiii\\repository\\categoriamarcaproveedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAE03E72-F166-41AD-923B-9D0BAACE710F}|WebApi_Easy_Commerce\\WebApi_Easy_Commerce.csproj|c:\\users\\jerem\\desktop\\universidad\\ciclo v\\programacion iii\\proyecto de ciclo\\tiendaelectronica\\webapi_easy_commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,32 +58,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "CategoriaMarcaProveedorDao.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\CategoriaMarcaProveedorDao.cs",
+              "RelativeDocumentMoniker": "ProyectoPrograIII\\Repository\\CategoriaMarcaProveedorDao.cs",
+              "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\CategoriaMarcaProveedorDao.cs",
+              "RelativeToolTip": "ProyectoPrograIII\\Repository\\CategoriaMarcaProveedorDao.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:29:05.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProductosController.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Controllers\\ProductosController.cs",
               "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\Controllers\\ProductosController.cs",
               "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Controllers\\ProductosController.cs",
               "RelativeToolTip": "WebApi_Easy_Commerce\\Controllers\\ProductosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAIwL0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T06:04:34.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProductoDao.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\ProductoDao.cs",
               "RelativeDocumentMoniker": "ProyectoPrograIII\\Repository\\ProductoDao.cs",
               "ToolTip": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\ProductoDao.cs",
               "RelativeToolTip": "ProyectoPrograIII\\Repository\\ProductoDao.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAIwJwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAIwJgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T06:04:30.03Z"
+              "WhenOpened": "2025-05-09T06:04:30.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Program.cs",
               "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\Program.cs",
@@ -91,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\appsettings.json",
               "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\appsettings.json",
@@ -103,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginDao.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\ProyectoPrograIII\\Repository\\LoginDao.cs",
               "RelativeDocumentMoniker": "ProyectoPrograIII\\Repository\\LoginDao.cs",
@@ -115,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "WebApi_Easy_Commerce\\Controllers\\LoginController.cs",

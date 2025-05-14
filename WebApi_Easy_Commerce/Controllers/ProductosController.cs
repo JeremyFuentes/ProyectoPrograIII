@@ -167,9 +167,9 @@ namespace WebApi_Easy_Commerce.Controllers
         }
 
         [HttpGet("filtrar")]
-        public IActionResult FiltrarProductos([FromQuery] int? marcaId, [FromQuery] int? categoriaId)
+        public IActionResult FiltrarProductos([FromQuery] int? marcaId, [FromQuery] int? categoriaId, [FromQuery] float? precioMax)
         {
-            var productos = _dao.GetByFiltros(marcaId, categoriaId);
+            var productos = _dao.GetByFiltros(marcaId, categoriaId, precioMax);
             var productosConImagen = productos.Select(p => new
             {
                 p.ProductoId,
@@ -184,7 +184,6 @@ namespace WebApi_Easy_Commerce.Controllers
 
             return Ok(productosConImagen);
         }
-
 
     }
 }

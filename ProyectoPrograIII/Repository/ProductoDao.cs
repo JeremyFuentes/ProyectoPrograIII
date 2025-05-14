@@ -140,7 +140,7 @@ namespace ProyectoPrograIII.Repository
         }
         #endregion
 
-        public List<Producto> GetByFiltros(int? marcaId, int? categoriaId)
+        public List<Producto> GetByFiltros(int? marcaId, int? categoriaId, float? precioMax)
         {
             var query = contexto.Productos.AsQueryable();
 
@@ -150,7 +150,10 @@ namespace ProyectoPrograIII.Repository
             if (categoriaId.HasValue)
                 query = query.Where(p => p.CategoriaId == categoriaId);
 
-            return query.Where(p => p.Estado == true).ToList(); // Solo activos
+            if (precioMax.HasValue)
+                query = query.Where(p => p.Precio <= precioMax);
+
+            return query.Where(p => p.Estado == true).ToList();
         }
 
     }
