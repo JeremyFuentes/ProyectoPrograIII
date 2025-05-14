@@ -80,21 +80,28 @@ namespace WebApi_Easy_Commerce.Controllers
 
             return Conflict("El correo ya está registrado. Usa otro correo o inicia sesión.");
         }
+
         #endregion
 
         #region Actualizar
         [HttpPut("ActualizarUsuario")]
-        public bool actualizarAlumno([FromBody] Usuario alumno)
+        public IActionResult actualizarUsuario([FromBody] Usuario usuario)
         {
-            return _loginDao.actualizar(alumno.UsuarioId, alumno);
+            bool resultado = _loginDao.actualizar(usuario.UsuarioId, usuario);
+            if (!resultado)
+            {
+                return BadRequest("El correo ya está en uso o hubo un error al actualizar.");
+            }
+            return Ok();
         }
         #endregion
 
         #region Eliminar
         [HttpDelete("EliminarUsuario")]
-        public bool eliminarAlumno(int id)
+        public IActionResult EliminarUsuario(int id)
         {
-            return _loginDao.eliminarUsuario(id);
+            var eliminado = _loginDao.eliminarUsuario(id);
+            return eliminado ? Ok() : NotFound();
         }
         #endregion
 
@@ -168,7 +175,36 @@ namespace WebApi_Easy_Commerce.Controllers
             {
                 return Unauthorized(new { mensaje = "Token inválido o expirado", error = ex.Message });
             }
-            #endregion
+            
         }
+        #endregion
+
+        [HttpPut("VincularGoogle")]
+        public async Task<IActionResult> VincularGoogle([FromBody] dynamic data)
+        {
+            string idToken = data.idToken;
+            int usuarioId = data.usuarioId;
+
+            try
+            {
+                var payload = await GoogleJsonWebSignature.ValidateAsync(idToken);
+
+                var usuario = _loginDao.GetById(usuarioId);
+                if (usuario == null)
+                    return NotFound("Usuario no encontrado");
+
+                usuario.GoogleId = payload.Subject;
+                usuario.MetodoLogin = "Google";
+                _context.Usuarios.Update(usuario);
+                _context.SaveChanges();
+
+                return Ok(new { mensaje = "Cuenta vinculada exitosamente con Google" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensaje = "Error al vincular cuenta", error = ex.Message });
+            }
+        }
+
     }
 }

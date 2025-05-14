@@ -13,7 +13,8 @@ namespace ProyectoPrograIII.Models
 
         public int Cantidad { get; set; }
 
-        public bool Comprado { get; set; }
+        public int EstadoProductoId { get; set; }
+        public EstadosProducto? EstadoProducto { get; set; }
 
         public double? PrecioUnitario { get; set; }
 

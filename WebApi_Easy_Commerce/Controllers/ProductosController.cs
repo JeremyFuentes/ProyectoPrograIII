@@ -129,11 +129,13 @@ namespace WebApi_Easy_Commerce.Controllers
         public IActionResult GetProductosConImagen()
         {
             var productos = _contexto.Productos
+                .Where(p => p.Estado == true)
                 .Select(p => new
                 {
                     p.ProductoId,
                     p.Nombre,
                     p.Precio,
+                    Stock = p.Estado.HasValue && p.Estado.Value ? p.Stock : 0, // Si está activo, devuelve el stock; si no, 0
                     Imagen = _contexto.ImagenesProducto
                         .Where(img => img.ProductoId == p.ProductoId && img.EsPrincipal)
                         .Select(img => img.UrlImagen)
@@ -143,5 +145,46 @@ namespace WebApi_Easy_Commerce.Controllers
             return Ok(productos);
         }
         #endregion
+
+        [HttpGet("buscarConImagen/{nombre}")]
+        public IActionResult BuscarConImagen(string nombre)
+        {
+            var productos = _contexto.Productos
+                .Where(p => p.Nombre.Contains(nombre) && p.Estado == true)
+                .Select(p => new
+                {
+                    p.ProductoId,
+                    p.Nombre,
+                    p.Precio,
+                    Stock = p.Estado.HasValue && p.Estado.Value ? p.Stock : 0,
+                    Imagen = _contexto.ImagenesProducto
+                        .Where(img => img.ProductoId == p.ProductoId && img.EsPrincipal)
+                        .Select(img => img.UrlImagen)
+                        .FirstOrDefault()
+                }).ToList();
+
+            return Ok(productos);
+        }
+
+        [HttpGet("filtrar")]
+        public IActionResult FiltrarProductos([FromQuery] int? marcaId, [FromQuery] int? categoriaId)
+        {
+            var productos = _dao.GetByFiltros(marcaId, categoriaId);
+            var productosConImagen = productos.Select(p => new
+            {
+                p.ProductoId,
+                p.Nombre,
+                p.Precio,
+                p.Stock,
+                Imagen = _contexto.ImagenesProducto
+                    .Where(img => img.ProductoId == p.ProductoId && img.EsPrincipal)
+                    .Select(img => img.UrlImagen)
+                    .FirstOrDefault()
+            }).ToList();
+
+            return Ok(productosConImagen);
+        }
+
+
     }
 }

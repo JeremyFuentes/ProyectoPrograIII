@@ -22,5 +22,6 @@ namespace ProyectoPrograIII.Repository
         public List<Marca> GetMarcas() => _contexto.Marcas.ToList();
 
         public List<Proveedore> GetProveedores() => _contexto.Proveedores.ToList();
+
     }
 }

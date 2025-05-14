@@ -41,6 +41,14 @@ namespace ProyectoPrograIII.Repository
         {
             try
             {
+                // Validar si ya existe un usuario con ese correo
+                var existeCorreo = contexto.Usuarios.Any(u => u.Correo == usuario.Correo);
+                if (existeCorreo)
+                {
+                    Console.WriteLine("❌ El correo ya está en uso.");
+                    return false;
+                }
+
                 var user = new Usuario
                 {
                     Nombre = usuario.Nombre,
@@ -51,8 +59,8 @@ namespace ProyectoPrograIII.Repository
                     Contraseña = new PasswordHasher<Usuario>().HashPassword(usuario, usuario.Contraseña),
                     MetodoLogin = usuario.MetodoLogin
                 };
-                contexto.Usuarios.Add(user);
 
+                contexto.Usuarios.Add(user);
                 contexto.SaveChanges();
                 return true;
             }
@@ -70,17 +78,31 @@ namespace ProyectoPrograIII.Repository
             try
             {
                 var usuarioUpdate = GetById(id);
-
                 if (usuarioUpdate == null)
                 {
                     Console.WriteLine("Usuario es null");
                     return false;
                 }
 
-                usuarioUpdate.Nombre = actualizar.Nombre;
-                usuarioUpdate.Direccion = actualizar.Direccion;
-                usuarioUpdate.Contacto = actualizar.Contacto;
-                usuarioUpdate.Correo = actualizar.Correo;
+                // 🧹 Limpieza de valores enviados como "Sin agregar"
+                string limpiar(string valor) =>
+                    string.IsNullOrWhiteSpace(valor) || valor.Trim() == "Sin agregar" ? null : valor.Trim();
+
+                string nombreLimpio = actualizar.Nombre?.Trim();
+                if (!string.Equals(usuarioUpdate.Nombre, nombreLimpio, StringComparison.Ordinal))
+                    usuarioUpdate.Nombre = nombreLimpio;
+
+                string direccionLimpia = limpiar(actualizar.Direccion);
+                if (!string.Equals(usuarioUpdate.Direccion, direccionLimpia, StringComparison.Ordinal))
+                    usuarioUpdate.Direccion = direccionLimpia;
+
+                string contactoLimpio = limpiar(actualizar.Contacto);
+                if (!string.Equals(usuarioUpdate.Contacto, contactoLimpio, StringComparison.Ordinal))
+                    usuarioUpdate.Contacto = contactoLimpio;
+
+                if (!string.Equals(usuarioUpdate.Correo, actualizar.Correo?.Trim(), StringComparison.Ordinal))
+                    usuarioUpdate.Correo = actualizar.Correo?.Trim();
+
                 usuarioUpdate.GoogleId = actualizar.GoogleId;
                 usuarioUpdate.MetodoLogin = actualizar.MetodoLogin;
 
@@ -88,7 +110,24 @@ namespace ProyectoPrograIII.Repository
                 if (!string.IsNullOrWhiteSpace(actualizar.Contraseña))
                 {
                     var hasher = new PasswordHasher<Usuario>();
+
+                    // Puedes validar si la contraseña ya es la misma con VerifyHashedPassword (opcional)
+                    // Pero lo normal es siempre rehashearla si llega una nueva contraseña
                     usuarioUpdate.Contraseña = hasher.HashPassword(usuarioUpdate, actualizar.Contraseña);
+                }
+
+                if (!string.Equals(usuarioUpdate.Correo, actualizar.Correo?.Trim(), StringComparison.OrdinalIgnoreCase))
+                {
+                    bool correoYaExiste = contexto.Usuarios.Any(u =>
+                        u.Correo == actualizar.Correo && u.UsuarioId != usuarioUpdate.UsuarioId);
+
+                    if (correoYaExiste)
+                    {
+                        Console.WriteLine("❌ El correo ya está registrado por otro usuario.");
+                        return false; // O lanza una excepción controlada
+                    }
+
+                    usuarioUpdate.Correo = actualizar.Correo?.Trim();
                 }
 
                 contexto.Usuarios.Update(usuarioUpdate);
@@ -106,27 +145,22 @@ namespace ProyectoPrograIII.Repository
         #region Eliminar
         public bool eliminarUsuario(int id)
         {
-            var borrar = GetById(id);
             try
             {
-                if (borrar == null)
-                {
-                    return false;
-                }
-                else
-                {
-                    contexto.Usuarios.Remove(borrar);
-                    contexto.SaveChanges();
-                    return true;
-                }
+                var usuario = contexto.Usuarios.Find(id);
+                if (usuario == null) return false;
 
+                contexto.Usuarios.Remove(usuario);
+                contexto.SaveChanges();
+                return true;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e.InnerException);
+                Console.WriteLine($"Error al eliminar usuario: {ex.Message}");
                 return false;
             }
         }
+
         #endregion
 
         #region Auntentificacion

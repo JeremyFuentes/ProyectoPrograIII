@@ -1,24 +1,104 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
-      "PackagePath": "staticwebassets\\imagenes\\39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png"
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.jpg"
     },
     {
-      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
-      "PackagePath": "staticwebassets\\imagenes\\75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png"
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.webp",
+      "PackagePath": "staticwebassets\\imagenes\\162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.webp"
     },
     {
-      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\db86872c-531b-4742-8608-de7b8cef4185_1024.png",
-      "PackagePath": "staticwebassets\\imagenes\\db86872c-531b-4742-8608-de7b8cef4185_1024.png"
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.webp",
+      "PackagePath": "staticwebassets\\imagenes\\269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.webp"
     },
     {
-      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
-      "PackagePath": "staticwebassets\\imagenes\\eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg"
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.jpg"
     },
     {
-      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
-      "PackagePath": "staticwebassets\\imagenes\\f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png"
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\39888858-1c58-4c3d-bf3e-de1631abcd8c_images.jpeg",
+      "PackagePath": "staticwebassets\\imagenes\\39888858-1c58-4c3d-bf3e-de1631abcd8c_images.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.png",
+      "PackagePath": "staticwebassets\\imagenes\\4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.png"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.png",
+      "PackagePath": "staticwebassets\\imagenes\\60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.png"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.webp",
+      "PackagePath": "staticwebassets\\imagenes\\6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.webp"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.webp",
+      "PackagePath": "staticwebassets\\imagenes\\9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.webp"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.webp",
+      "PackagePath": "staticwebassets\\imagenes\\f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.webp"
     },
     {
       "Id": "C:\\Users\\jerem\\Desktop\\Universidad\\Ciclo V\\Programacion III\\Proyecto de Ciclo\\TiendaElectronica\\WebApi_Easy_Commerce\\wwwroot\\imagenes\\placeholder.png",

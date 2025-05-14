@@ -238,7 +238,7 @@
         }
       }
     },
-    "/carrito/Agregar": {
+    "/carrito/agregar": {
       "post": {
         "tags": [
           "Carrito"
@@ -299,7 +299,7 @@
         }
       }
     },
-    "/carrito/ConfirmarCompra/{usuarioId}": {
+    "/carrito/confirmarCompra/{usuarioId}": {
       "put": {
         "tags": [
           "Carrito"
@@ -369,6 +369,96 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/carrito/activos/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Carrito"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/carrito/entregados/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Carrito"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/carrito/PedidosAgrupados": {
+      "get": {
+        "tags": [
+          "Carrito"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/carrito/ActualizarEstado/{carritoId}/{nuevoEstadoId}": {
+      "put": {
+        "tags": [
+          "Carrito"
+        ],
+        "parameters": [
+          {
+            "name": "carritoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "nuevoEstadoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -836,24 +926,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -875,24 +948,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -972,6 +1028,31 @@
               "schema": {
                 "type": "string"
               }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/usuarios/VincularGoogle": {
+      "put": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
             }
           }
         },
@@ -1420,6 +1501,58 @@
           }
         }
       }
+    },
+    "/productos/buscarConImagen/{nombre}": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "parameters": [
+          {
+            "name": "nombre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/productos/filtrar": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "parameters": [
+          {
+            "name": "marcaId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "categoriaId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1473,8 +1606,12 @@
             "type": "integer",
             "format": "int32"
           },
-          "comprado": {
-            "type": "boolean"
+          "estadoProductoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoProducto": {
+            "$ref": "#/components/schemas/EstadosProducto"
           },
           "precioUnitario": {
             "type": "number",
@@ -1664,6 +1801,27 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Facturacion"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadosProducto": {
+        "type": "object",
+        "properties": {
+          "estadoProductoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "carritos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Carrito"
             },
             "nullable": true
           }

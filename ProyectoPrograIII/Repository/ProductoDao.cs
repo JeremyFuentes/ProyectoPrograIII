@@ -139,5 +139,19 @@ namespace ProyectoPrograIII.Repository
             return true;
         }
         #endregion
+
+        public List<Producto> GetByFiltros(int? marcaId, int? categoriaId)
+        {
+            var query = contexto.Productos.AsQueryable();
+
+            if (marcaId.HasValue)
+                query = query.Where(p => p.MarcaId == marcaId);
+
+            if (categoriaId.HasValue)
+                query = query.Where(p => p.CategoriaId == categoriaId);
+
+            return query.Where(p => p.Estado == true).ToList(); // Solo activos
+        }
+
     }
 }

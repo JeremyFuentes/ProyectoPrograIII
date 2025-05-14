@@ -121,6 +121,22 @@
   },
   {
     "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "GetPedidosActivos",
+    "RelativePath": "carrito/activos/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
     "Method": "ActualizarCantidad",
     "RelativePath": "carrito/actualizarCantidad",
     "HttpMethod": "PUT",
@@ -142,8 +158,29 @@
   },
   {
     "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "ActualizarEstado",
+    "RelativePath": "carrito/ActualizarEstado/{carritoId}/{nuevoEstadoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carritoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstadoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
     "Method": "AgregarProducto",
-    "RelativePath": "carrito/Agregar",
+    "RelativePath": "carrito/agregar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -159,7 +196,7 @@
   {
     "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
     "Method": "ConfirmarCompra",
-    "RelativePath": "carrito/ConfirmarCompra/{usuarioId}",
+    "RelativePath": "carrito/confirmarCompra/{usuarioId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -206,6 +243,22 @@
   },
   {
     "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "GetPedidosEntregados",
+    "RelativePath": "carrito/entregados/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
     "Method": "GetHistorial",
     "RelativePath": "carrito/historial/{usuarioId}",
     "HttpMethod": "GET",
@@ -218,6 +271,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoPrograIII.Controllers.CarritoController",
+    "Method": "PedidosAgrupados",
+    "RelativePath": "carrito/PedidosAgrupados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -461,6 +524,22 @@
   },
   {
     "ContainingType": "WebApi_Easy_Commerce.Controllers.ProductosController",
+    "Method": "BuscarConImagen",
+    "RelativePath": "productos/buscarConImagen/{nombre}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_Easy_Commerce.Controllers.ProductosController",
     "Method": "GetProductosConImagen",
     "RelativePath": "productos/conImagenPrincipal",
     "HttpMethod": "GET",
@@ -481,6 +560,27 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_Easy_Commerce.Controllers.ProductosController",
+    "Method": "FiltrarProductos",
+    "RelativePath": "productos/filtrar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "marcaId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "categoriaId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -733,29 +833,19 @@
   },
   {
     "ContainingType": "WebApi_Easy_Commerce.Controllers.LoginController",
-    "Method": "actualizarAlumno",
+    "Method": "actualizarUsuario",
     "RelativePath": "usuarios/ActualizarUsuario",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "alumno",
+        "Name": "usuario",
         "Type": "ProyectoPrograIII.Models.Usuario",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebApi_Easy_Commerce.Controllers.LoginController",
@@ -807,7 +897,7 @@
   },
   {
     "ContainingType": "WebApi_Easy_Commerce.Controllers.LoginController",
-    "Method": "eliminarAlumno",
+    "Method": "EliminarUsuario",
     "RelativePath": "usuarios/EliminarUsuario",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -819,17 +909,7 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebApi_Easy_Commerce.Controllers.LoginController",
@@ -894,6 +974,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_Easy_Commerce.Controllers.LoginController",
+    "Method": "VincularGoogle",
+    "RelativePath": "usuarios/VincularGoogle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Object",
         "IsRequired": true
       }
     ],

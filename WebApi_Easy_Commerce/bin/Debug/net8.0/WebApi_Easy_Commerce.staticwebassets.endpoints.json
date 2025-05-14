@@ -3,53 +3,8 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.acj3svztjb.png",
-      "AssetFile": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "434555"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:25:10 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "acj3svztjb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4="
-        },
-        {
-          "Name": "label",
-          "Value": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png"
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
-      "AssetFile": "imagenes/39768511-82ab-4fc0-a1c1-afe41f8dc239_MB0093.png",
+      "Route": "imagenes/048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.jpg",
+      "AssetFile": "imagenes/048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,208 +17,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "434555"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:25:10 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qmz1kIoBh64jSqR5Y/PotXpi/dPEawRD5mH38jb2/X4="
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
-      "AssetFile": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "229873"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AaGAcZP1SCTNV946sCZYrTeV/knuX3Nl1OdyoGuuS5g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AaGAcZP1SCTNV946sCZYrTeV/knuX3Nl1OdyoGuuS5g="
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.r534qj3ryq.png",
-      "AssetFile": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "229873"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AaGAcZP1SCTNV946sCZYrTeV/knuX3Nl1OdyoGuuS5g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r534qj3ryq"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AaGAcZP1SCTNV946sCZYrTeV/knuX3Nl1OdyoGuuS5g="
-        },
-        {
-          "Name": "label",
-          "Value": "imagenes/75141b2e-4cde-475a-8be5-1cacabb8b564_unnamed.png"
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/db86872c-531b-4742-8608-de7b8cef4185_1024.m25n3va647.png",
-      "AssetFile": "imagenes/db86872c-531b-4742-8608-de7b8cef4185_1024.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "502601"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kqes9inXKULrtvJ+RUkzNP5kDj9VMquzoE7ECOVseTA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:59:09 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m25n3va647"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kqes9inXKULrtvJ+RUkzNP5kDj9VMquzoE7ECOVseTA="
-        },
-        {
-          "Name": "label",
-          "Value": "imagenes/db86872c-531b-4742-8608-de7b8cef4185_1024.png"
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/db86872c-531b-4742-8608-de7b8cef4185_1024.png",
-      "AssetFile": "imagenes/db86872c-531b-4742-8608-de7b8cef4185_1024.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "502601"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kqes9inXKULrtvJ+RUkzNP5kDj9VMquzoE7ECOVseTA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:59:09 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kqes9inXKULrtvJ+RUkzNP5kDj9VMquzoE7ECOVseTA="
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.7mwbcf24eh.jpg",
-      "AssetFile": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "75569"
+          "Value": "22697"
         },
         {
           "Name": "Content-Type",
@@ -271,105 +25,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=\""
+          "Value": "\"FypZolti9TgjV3Vn6Pk5Xhy1sSbXowBffUH4Um3ktpE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:24:13 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7mwbcf24eh"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI="
-        },
-        {
-          "Name": "label",
-          "Value": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
-      "AssetFile": "imagenes/eb6622db-8fff-4da4-b329-94927a6230b3_61gmuQ+qb5L._AC_UF894,1000_QL80_.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "75569"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:24:13 GMT"
+          "Value": "Fri, 09 May 2025 05:57:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IT7LtJOWDhrcFU19CvSvfatrfSW5eAqA9XXuUbGlfbI="
+          "Value": "sha256-FypZolti9TgjV3Vn6Pk5Xhy1sSbXowBffUH4Um3ktpE="
         }
       ]
     },
     {
-      "Route": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
-      "AssetFile": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "434074"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk="
-        }
-      ]
-    },
-    {
-      "Route": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.ur4xow9teq.png",
-      "AssetFile": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png",
+      "Route": "imagenes/048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.vmalpys3j7.jpg",
+      "AssetFile": "imagenes/048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -382,7 +54,708 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "434074"
+          "Value": "22697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FypZolti9TgjV3Vn6Pk5Xhy1sSbXowBffUH4Um3ktpE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:57:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vmalpys3j7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FypZolti9TgjV3Vn6Pk5Xhy1sSbXowBffUH4Um3ktpE="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/048b6862-2134-435f-8a66-1c313a2c7873_Cooler Master Hyper 212 Black Edition.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.h0qr1zdci1.webp",
+      "AssetFile": "imagenes/162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j2bJfdkQSyGMzvcXe/Bw+SG6fxbGq7WGsVB4132E3Es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:58:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h0qr1zdci1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j2bJfdkQSyGMzvcXe/Bw+SG6fxbGq7WGsVB4132E3Es="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.webp"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.webp",
+      "AssetFile": "imagenes/162be4ff-c712-4fae-8cb8-f6814d8ec5bd_NZXT H510 Elite.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j2bJfdkQSyGMzvcXe/Bw+SG6fxbGq7WGsVB4132E3Es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:58:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j2bJfdkQSyGMzvcXe/Bw+SG6fxbGq7WGsVB4132E3Es="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.6q6stiplm5.webp",
+      "AssetFile": "imagenes/269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14414"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DqZ4dn/Mpj8MeDas4kY9GH3XPs9Aftd9/mMeBcQwkmg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:39:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6q6stiplm5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DqZ4dn/Mpj8MeDas4kY9GH3XPs9Aftd9/mMeBcQwkmg="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.webp"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.webp",
+      "AssetFile": "imagenes/269b406d-72fc-46f8-aa11-ff424bbd7470_MacBook Air M2 2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14414"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DqZ4dn/Mpj8MeDas4kY9GH3XPs9Aftd9/mMeBcQwkmg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:39:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DqZ4dn/Mpj8MeDas4kY9GH3XPs9Aftd9/mMeBcQwkmg="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.ab2jqnphpn.jpg",
+      "AssetFile": "imagenes/33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dnhsdyEXjx0x0AdppQ3R5DaNmeObF4/+Ysiv/pgIKF8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:48:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ab2jqnphpn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dnhsdyEXjx0x0AdppQ3R5DaNmeObF4/+Ysiv/pgIKF8="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.jpg",
+      "AssetFile": "imagenes/33f96a55-e947-4361-a424-d5bcc358ab98_Intel Core i9-13900K.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dnhsdyEXjx0x0AdppQ3R5DaNmeObF4/+Ysiv/pgIKF8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:48:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dnhsdyEXjx0x0AdppQ3R5DaNmeObF4/+Ysiv/pgIKF8="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.jpg",
+      "AssetFile": "imagenes/37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38296"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35Rji1cc/M6y3KeFi62wVyDXdpXuMJ0bMrXk99Wk184=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-35Rji1cc/M6y3KeFi62wVyDXdpXuMJ0bMrXk99Wk184="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.xc1pkhqav0.jpg",
+      "AssetFile": "imagenes/37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38296"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35Rji1cc/M6y3KeFi62wVyDXdpXuMJ0bMrXk99Wk184=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:49:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xc1pkhqav0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-35Rji1cc/M6y3KeFi62wVyDXdpXuMJ0bMrXk99Wk184="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/37a932ba-ec29-46b9-96b5-7cec7a8a2b62_imagen_generada67f3ebc6e1c40.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/39888858-1c58-4c3d-bf3e-de1631abcd8c_images.jpeg",
+      "AssetFile": "imagenes/39888858-1c58-4c3d-bf3e-de1631abcd8c_images.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ruO4fcpXlV+VbmtEWckel5AEfUaO2q+YbxWGxz9tfsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:41:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ruO4fcpXlV+VbmtEWckel5AEfUaO2q+YbxWGxz9tfsY="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/39888858-1c58-4c3d-bf3e-de1631abcd8c_images.ycosykcfwv.jpeg",
+      "AssetFile": "imagenes/39888858-1c58-4c3d-bf3e-de1631abcd8c_images.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ruO4fcpXlV+VbmtEWckel5AEfUaO2q+YbxWGxz9tfsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:41:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ycosykcfwv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ruO4fcpXlV+VbmtEWckel5AEfUaO2q+YbxWGxz9tfsY="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/39888858-1c58-4c3d-bf3e-de1631abcd8c_images.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.d1qllc9oln.jpg",
+      "AssetFile": "imagenes/3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d1qllc9oln"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.jpg",
+      "AssetFile": "imagenes/3e542645-741a-4281-8ecb-2728b595ca81_Seagate IronWolf 4TB.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.b4dbmqywyt.jpg",
+      "AssetFile": "imagenes/40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "375430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Urh/+1yehqnv+MvHfic3k6JR407edCtAaS6o/nZtLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:45:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b4dbmqywyt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Urh/+1yehqnv+MvHfic3k6JR407edCtAaS6o/nZtLQ="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.jpg",
+      "AssetFile": "imagenes/40db8745-3e80-4bf5-8f34-f14a74d33530_LD0005773909_1_0005774245.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "375430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Urh/+1yehqnv+MvHfic3k6JR407edCtAaS6o/nZtLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:45:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Urh/+1yehqnv+MvHfic3k6JR407edCtAaS6o/nZtLQ="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.44y90ndlce.jpg",
+      "AssetFile": "imagenes/4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DB+BFwpzNq/YBShc0sSp2ZdPWUFEgCIQIM6V1jbI1Us=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:46:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "44y90ndlce"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DB+BFwpzNq/YBShc0sSp2ZdPWUFEgCIQIM6V1jbI1Us="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.jpg",
+      "AssetFile": "imagenes/4be44b8c-e38c-4db6-9cb8-1fff2153da04_Kingston Fury Beast 16GB.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DB+BFwpzNq/YBShc0sSp2ZdPWUFEgCIQIM6V1jbI1Us=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:46:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DB+BFwpzNq/YBShc0sSp2ZdPWUFEgCIQIM6V1jbI1Us="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.exqqerki0l.png",
+      "AssetFile": "imagenes/4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "842388"
         },
         {
           "Name": "Content-Type",
@@ -390,25 +763,1292 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk=\""
+          "Value": "\"Lhs1EQl7VTPjT8Q2ZUbGoZKTJ8kuPBv+Sh/b2wbLczI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 14:14:43 GMT"
+          "Value": "Fri, 09 May 2025 05:37:34 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ur4xow9teq"
+          "Value": "exqqerki0l"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lgGiG9FYKQ62HmfN3kj9+mDkGtCMC8HYndC4dBTxnmk="
+          "Value": "sha256-Lhs1EQl7VTPjT8Q2ZUbGoZKTJ8kuPBv+Sh/b2wbLczI="
         },
         {
           "Name": "label",
-          "Value": "imagenes/f47fefec-751f-459a-b10f-cb5f8ba60a91_10-PNY-RTX-5090-ARGB-OC-EPIC-X-Triple-Fan-gr.png"
+          "Value": "imagenes/4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.png"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.png",
+      "AssetFile": "imagenes/4dc12b56-b2a0-4f50-9eca-837aa4decba1_ASUS TUF Gaming F15.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "842388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lhs1EQl7VTPjT8Q2ZUbGoZKTJ8kuPBv+Sh/b2wbLczI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:37:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lhs1EQl7VTPjT8Q2ZUbGoZKTJ8kuPBv+Sh/b2wbLczI="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.jpg",
+      "AssetFile": "imagenes/5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zvvVeo6O0BnpOL+MA4d5MB0Gf7IzossmpJM/fSpJWHA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 06:01:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zvvVeo6O0BnpOL+MA4d5MB0Gf7IzossmpJM/fSpJWHA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.mz3gk6mvx6.jpg",
+      "AssetFile": "imagenes/5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zvvVeo6O0BnpOL+MA4d5MB0Gf7IzossmpJM/fSpJWHA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 06:01:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mz3gk6mvx6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zvvVeo6O0BnpOL+MA4d5MB0Gf7IzossmpJM/fSpJWHA="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/5416ae3f-b9b3-4618-bb76-76ff509eae2d_Elgato Stream Deck MK.2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.jpg",
+      "AssetFile": "imagenes/59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lYw+f6T74hKzHGQZaTMPzkC3CnKgdg48mTBL5pKdEzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:38:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lYw+f6T74hKzHGQZaTMPzkC3CnKgdg48mTBL5pKdEzY="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.ndocxba0zr.jpg",
+      "AssetFile": "imagenes/59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lYw+f6T74hKzHGQZaTMPzkC3CnKgdg48mTBL5pKdEzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:38:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ndocxba0zr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lYw+f6T74hKzHGQZaTMPzkC3CnKgdg48mTBL5pKdEzY="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/59350972-b300-45df-90a5-bd74615d35df_Dell XPS 13.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.2r9io6szdh.png",
+      "AssetFile": "imagenes/60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4879933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Io7CCYwpvrOuzxAcsq4rB7ScG/1YcsuBbjYvsJawKXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:43:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2r9io6szdh"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Io7CCYwpvrOuzxAcsq4rB7ScG/1YcsuBbjYvsJawKXc="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.png"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.png",
+      "AssetFile": "imagenes/60b22d24-56fc-43f3-8153-4f1c71adbb48_ASUS ROG Strix B550-F.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4879933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Io7CCYwpvrOuzxAcsq4rB7ScG/1YcsuBbjYvsJawKXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:43:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Io7CCYwpvrOuzxAcsq4rB7ScG/1YcsuBbjYvsJawKXc="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.bsgwex23zg.webp",
+      "AssetFile": "imagenes/6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BRGnjTHR/8+2YLKbJX/LTUzg2+5d1WO1ZgCoaK1pOlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:56:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bsgwex23zg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BRGnjTHR/8+2YLKbJX/LTUzg2+5d1WO1ZgCoaK1pOlA="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.webp"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.webp",
+      "AssetFile": "imagenes/6a5a1735-4aed-4b74-a2e7-13da97fd7872_Razer BlackWidow V4 2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BRGnjTHR/8+2YLKbJX/LTUzg2+5d1WO1ZgCoaK1pOlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:56:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BRGnjTHR/8+2YLKbJX/LTUzg2+5d1WO1ZgCoaK1pOlA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.jpg",
+      "AssetFile": "imagenes/6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4cxGsIvnIw4i+gj1t6FsSkqyFon4OpgXGgfjwu7Tg7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:55:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4cxGsIvnIw4i+gj1t6FsSkqyFon4OpgXGgfjwu7Tg7M="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.xctp85jclx.jpg",
+      "AssetFile": "imagenes/6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4cxGsIvnIw4i+gj1t6FsSkqyFon4OpgXGgfjwu7Tg7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:55:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xctp85jclx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4cxGsIvnIw4i+gj1t6FsSkqyFon4OpgXGgfjwu7Tg7M="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/6c2d4e71-4202-4e6e-9fb6-09096736cf31_Logitech G Pro X Superlight.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.hqh05r0p1e.jpg",
+      "AssetFile": "imagenes/844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N/VyIT1Jt8WU9lJ0/nKOFCcRq6gf2xz66l1FsnOKnnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:39:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqh05r0p1e"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N/VyIT1Jt8WU9lJ0/nKOFCcRq6gf2xz66l1FsnOKnnQ="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.jpg",
+      "AssetFile": "imagenes/844c810b-19cc-4276-9873-5bebd03580d6_MacBook Air M2 1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N/VyIT1Jt8WU9lJ0/nKOFCcRq6gf2xz66l1FsnOKnnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:39:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N/VyIT1Jt8WU9lJ0/nKOFCcRq6gf2xz66l1FsnOKnnQ="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.9picnojl4n.webp",
+      "AssetFile": "imagenes/9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rTDvKgEmofAVwpYFaah/wnoebU9AgOyQ60HWvI6LHes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:42:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9picnojl4n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rTDvKgEmofAVwpYFaah/wnoebU9AgOyQ60HWvI6LHes="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.webp"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.webp",
+      "AssetFile": "imagenes/9244bbd0-bc87-49eb-9d68-0b4062cdfe15_Gigabyte GeForce RTX 4070 Ti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rTDvKgEmofAVwpYFaah/wnoebU9AgOyQ60HWvI6LHes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:42:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rTDvKgEmofAVwpYFaah/wnoebU9AgOyQ60HWvI6LHes="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.08ie8rmebn.jpg",
+      "AssetFile": "imagenes/a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250960"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wIdgNmMrZ2Y38wGWWkvE1E8vkG4xSm4KiSzgF0WsC+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:53:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "08ie8rmebn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wIdgNmMrZ2Y38wGWWkvE1E8vkG4xSm4KiSzgF0WsC+8="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.jpg",
+      "AssetFile": "imagenes/a405dc67-39fb-484d-a785-eeaa9ec33b2d_71zhBR0KB2L.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250960"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wIdgNmMrZ2Y38wGWWkvE1E8vkG4xSm4KiSzgF0WsC+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:53:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wIdgNmMrZ2Y38wGWWkvE1E8vkG4xSm4KiSzgF0WsC+8="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.d1qllc9oln.jpg",
+      "AssetFile": "imagenes/a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d1qllc9oln"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.jpg",
+      "AssetFile": "imagenes/a6426c77-acde-491b-9136-3aaaeb98cf0d_Seagate IronWolf 4TB.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "306676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EexnX3zU5fhdcxsutTKSXZuGvNSgvGW8oJkGmBnvHf4="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.jpg",
+      "AssetFile": "imagenes/b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BKM7HpyAgHi70HQW85Y2Bu3dzdrtuUuStpsObpyhJuE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:51:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BKM7HpyAgHi70HQW85Y2Bu3dzdrtuUuStpsObpyhJuE="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.s0yjak5jvy.jpg",
+      "AssetFile": "imagenes/b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BKM7HpyAgHi70HQW85Y2Bu3dzdrtuUuStpsObpyhJuE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:51:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s0yjak5jvy"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BKM7HpyAgHi70HQW85Y2Bu3dzdrtuUuStpsObpyhJuE="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/b164fdee-3e75-4eb5-a7a6-99d25f9ad7e4_61KeSQhDm4L._AC_UF1000,1000_QL80_.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.jpg",
+      "AssetFile": "imagenes/b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28961"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZtHXyow32r1bKTPe+Hb8UlV/1xGnr87LJg6wOSTv/ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:59:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZtHXyow32r1bKTPe+Hb8UlV/1xGnr87LJg6wOSTv/ro="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.q7dmlck3e6.jpg",
+      "AssetFile": "imagenes/b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28961"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZtHXyow32r1bKTPe+Hb8UlV/1xGnr87LJg6wOSTv/ro=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:59:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q7dmlck3e6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZtHXyow32r1bKTPe+Hb8UlV/1xGnr87LJg6wOSTv/ro="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/b41ece49-adcc-415a-a934-3e0a16bd7d85_EVGA 750W GQ.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.jpg",
+      "AssetFile": "imagenes/d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "135015"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/8I+FXszj1oz42Ub6BWbImgWuHV/dPWlZIHKRVyJwA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:59:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/8I+FXszj1oz42Ub6BWbImgWuHV/dPWlZIHKRVyJwA4="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.rpafr9202o.jpg",
+      "AssetFile": "imagenes/d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "135015"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/8I+FXszj1oz42Ub6BWbImgWuHV/dPWlZIHKRVyJwA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:59:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rpafr9202o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/8I+FXszj1oz42Ub6BWbImgWuHV/dPWlZIHKRVyJwA4="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/d4cc2420-fb0c-48a8-abc8-22e5dc2c76c7_TP-Link Archer AX73.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.jpg",
+      "AssetFile": "imagenes/eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JB2mApbqcSrk6dwUWunHrYYpWtf7z18w8cA97gyxGN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:53:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JB2mApbqcSrk6dwUWunHrYYpWtf7z18w8cA97gyxGN0="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.o16djw1wqd.jpg",
+      "AssetFile": "imagenes/eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JB2mApbqcSrk6dwUWunHrYYpWtf7z18w8cA97gyxGN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:53:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o16djw1wqd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JB2mApbqcSrk6dwUWunHrYYpWtf7z18w8cA97gyxGN0="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/eed3ee91-c77f-4f42-835a-0095338b6ac8_61JkTXrgYxS._AC_SL1500_.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.jpg",
+      "AssetFile": "imagenes/f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E4ucyhGlHG+1zSkkMDyA0Ew5kKg9EKH6S99rjEpZ0Ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:57:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E4ucyhGlHG+1zSkkMDyA0Ew5kKg9EKH6S99rjEpZ0Ho="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.li9vftridd.jpg",
+      "AssetFile": "imagenes/f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E4ucyhGlHG+1zSkkMDyA0Ew5kKg9EKH6S99rjEpZ0Ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:57:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "li9vftridd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E4ucyhGlHG+1zSkkMDyA0Ew5kKg9EKH6S99rjEpZ0Ho="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/f08b695d-6726-4180-81bf-d9a8cc87ce8c_Cooler Master Hyper 212 Black Edition 2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.webp",
+      "AssetFile": "imagenes/f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B0ZtgYij4fO8m84lU8Jo91O9ZFZzTug64hQ+w6YkoAM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:56:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B0ZtgYij4fO8m84lU8Jo91O9ZFZzTug64hQ+w6YkoAM="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.x6s9ra6o5y.webp",
+      "AssetFile": "imagenes/f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B0ZtgYij4fO8m84lU8Jo91O9ZFZzTug64hQ+w6YkoAM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 05:56:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x6s9ra6o5y"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B0ZtgYij4fO8m84lU8Jo91O9ZFZzTug64hQ+w6YkoAM="
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/f6e32366-2b82-4ee0-b47c-13ee229ee454_Razer BlackWidow V4.webp"
         }
       ]
     },

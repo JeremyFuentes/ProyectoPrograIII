@@ -17,46 +17,42 @@ namespace ProyectoPrograIII.Controllers
         }
 
         [HttpGet("usuario/{usuarioId}")]
-        public IActionResult GetPorUsuario(int usuarioId) => Ok(_dao.GetCarritoPorUsuario(usuarioId));
+        public IActionResult GetPorUsuario(int usuarioId) =>
+            Ok(_dao.GetCarritoPorUsuario(usuarioId));
 
         [HttpGet("historial/{usuarioId}")]
-        public IActionResult GetHistorial(int usuarioId) => Ok(_dao.GetHistorialPorUsuario(usuarioId));
+        public IActionResult GetHistorial(int usuarioId) =>
+            Ok(_dao.GetHistorialPorUsuario(usuarioId));
 
-        [HttpPost("Agregar")]
+        [HttpPost("agregar")]
         public IActionResult AgregarProducto([FromBody] Carrito item)
         {
             bool agregado = _dao.Agregar(item);
-
             if (!agregado)
                 return Conflict(new { mensaje = "El producto ya está en el carrito." });
-
             return Ok(new { mensaje = "Producto agregado." });
         }
-
 
         [HttpPut("actualizarCantidad")]
         public IActionResult ActualizarCantidad([FromQuery] int carritoId, [FromQuery] int cantidad)
         {
-            var ok = _dao.ActualizarCantidad(carritoId, cantidad);
+            bool ok = _dao.ActualizarCantidad(carritoId, cantidad);
             return ok ? Ok() : NotFound();
         }
 
-        [HttpPut("ConfirmarCompra/{usuarioId}")]
+        [HttpPut("confirmarCompra/{usuarioId}")]
         public async Task<IActionResult> ConfirmarCompra(int usuarioId)
         {
             try
             {
-                var result = await _dao.ConfirmarCompra(usuarioId);
-                if (result)
-                    return Ok();
-                return NotFound();
+                bool result = await _dao.ConfirmarCompra(usuarioId);
+                return result ? Ok() : NotFound();
             }
             catch (InvalidOperationException ex)
             {
                 return BadRequest(new { mensaje = ex.Message });
             }
         }
-
 
         [HttpDelete("eliminar/{carritoId}")]
         public IActionResult Eliminar(int carritoId)
@@ -72,8 +68,31 @@ namespace ProyectoPrograIII.Controllers
             if (carrito.UsuarioId == null || carrito.ProductoId == null)
                 return BadRequest(new { mensaje = "Datos incompletos" });
 
-            var ok = _dao.EliminarPorUsuarioYProducto(carrito.UsuarioId.Value, carrito.ProductoId.Value);
+            bool ok = _dao.EliminarPorUsuarioYProducto(carrito.UsuarioId.Value, carrito.ProductoId.Value);
             return ok ? Ok(new { mensaje = "Eliminado correctamente" }) : NotFound();
+        }
+
+        [HttpGet("activos/{usuarioId}")]
+        public IActionResult GetPedidosActivos(int usuarioId) =>
+    Ok(_dao.GetPedidosActivosPorUsuario(usuarioId));
+
+        [HttpGet("entregados/{usuarioId}")]
+        public IActionResult GetPedidosEntregados(int usuarioId) =>
+            Ok(_dao.GetHistorialEntregadosPorUsuario(usuarioId));
+
+        [HttpGet("PedidosAgrupados")]
+        public IActionResult PedidosAgrupados()
+        {
+            var pedidos = _dao.ObtenerPedidosAgrupados();
+            return Ok(pedidos);
+        }
+
+        [HttpPut("ActualizarEstado/{carritoId}/{nuevoEstadoId}")]
+        public IActionResult ActualizarEstado(int carritoId, int nuevoEstadoId)
+        {
+            var exito = _dao.ActualizarEstado(carritoId, nuevoEstadoId);
+            if (!exito) return NotFound();
+            return Ok();
         }
     }
 }
