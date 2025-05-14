@@ -12,42 +12,42 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="../Usuarios/indexusuario.html">Easy Commerce</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
-          <!-- Productos con dropdown y link -->
-          <li class="nav-item"><a class="nav-link" href="../Usuarios/productosusuario.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Promociones</a></li>
-        </ul>
-  
-        <div class="d-flex align-items-center">
-          <input class="form-control me-3 search-input" type="search" placeholder="Buscar un producto...">
-          <a href="../Usuarios/carritousuario.html" class="me-3 text-dark"><i class="fa fa-shopping-cart"></i></a>
-          <span id="nombreUsuario" class="fw-semibold text-dark" style="margin-right: 8px;"></span>
-          <a href="/html/Usuarios/favoritosusuario.html" class="me-3 text-dark"><i class="fa fa-heart"></i></a>
-  
-          <!-- Menú del usuario (sólo se despliega, no es clickeable) -->
-          <div class="dropdown">
-            <span class="text-dark" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
-              <i class="fa fa-user"></i>
-            </span>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-              <li><a class="dropdown-item" href="configuracionusuario.html">Configuración</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="../index.html" id="logoutUsuario">Cerrar sesión</a></li>
-            </ul>
-          </div>
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="../Usuarios/indexusuario.html">Easy Commerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+      <!-- Productos con dropdown y link -->
+        <li class="nav-item"><a class="nav-link" href="../Usuarios/productosusuario.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="serviciosUsuario.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotrosUsuario.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="promocionesUsuario.html">Promociones</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center">
+        <input class="form-control me-3 search-input" type="search" placeholder="Buscar un producto..."/>
+        <a href="../Usuarios/carritousuario.html" class="me-3 text-dark"><i class="fa fa-shopping-cart"></i></a>
+        <span id="nombreUsuario" class="fw-semibold me-3 text-dark"></span>
+        <a href="/html/Usuarios/favoritosusuario.html" class="me-3 text-dark"><i class="fa fa-heart"></i></a>
+        
+        <!-- Menú del usuario (sólo se despliega, no es clickeable) -->
+        <div class="dropdown">
+          <span class="text-dark" role="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
+            <i class="fa fa-user"></i>
+          </span>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+            <li><a class="dropdown-item" href="configuracionusuario.html">Configuración</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="../index.html" id="logoutUsuario">Cerrar sesión</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
   
 
 <!-- Hero Section -->

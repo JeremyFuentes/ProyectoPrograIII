@@ -35,6 +35,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         const idFavorito = esFavorito ? favorito.favoritoId : "";
 
         document.getElementById("tituloProducto").textContent = producto.nombre;
+
+        // Verificar si el producto está inactivo
+        const btnAgregarCarrito = document.querySelector(".btn-dark.px-4.rounded-pill");
+        if (!producto.estado) {
+            btnAgregarCarrito.textContent = "No disponible";
+            btnAgregarCarrito.disabled = true;
+            btnAgregarCarrito.classList.add("btn-secondary");
+            btnAgregarCarrito.classList.remove("btn-dark");
+        }
+
         document.getElementById("precioProducto").textContent = producto.precio.toFixed(2);
         document.getElementById("descripcionProducto").textContent = producto.descripcion;
         const stockTexto = document.getElementById("stockTexto");
@@ -148,22 +158,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     document.querySelector(".btn-dark.px-4.rounded-pill").addEventListener("click", async () => {
         const cantidadSeleccionada = parseInt(document.getElementById("cantidadProducto").textContent);
-    
+
         try {
             const res = await fetch(`${API_BASE}/carrito/Agregar`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    usuarioId: parseInt(usuarioId),
+                    usuarioId: parseInt(localStorage.getItem("usuarioId")),
                     productoId: parseInt(productoId),
                     cantidad: cantidadSeleccionada,
-                    comprado: false,
-                    precioUnitario: parseFloat(producto.precio)
+                    estadoProductoId: 1,
+                    precioUnitario: producto.precio // ✅ ya tienes el producto global
                 })
             });
-    
+
             const data = await res.json();
-    
+
             if (res.ok) {
                 alert("✅ Producto agregado al carrito.");
             } else if (res.status === 409) {
@@ -172,11 +182,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 alert("❌ No se pudo agregar el producto al carrito.");
                 console.error("Respuesta inesperada del servidor:", data);
             }
-    
+
         } catch (err) {
             console.error("❌ Error de red:", err);
             alert("Error de red al intentar agregar el producto.");
         }
-    });       
-
+    });
 });

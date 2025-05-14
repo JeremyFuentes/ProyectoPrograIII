@@ -33,20 +33,17 @@ async function cargarFavoritos() {
         favoritos.forEach(fav => {
             const producto = fav.producto;
             if (!producto) return;
-        
-            // 🔍 Obtener ruta de imagen desde imagenesProducto
-            const imagenRuta = producto.imagenesProducto?.[0]?.urlImagen;
-const imagenUrl = imagenRuta
-    ? `https://localhost:7291${imagenRuta}`
-    : 'https://localhost:7291/imagenes/placeholder.png';
 
-console.log("🖼️ Imagen URL cargada:", imagenUrl);
-        
+            const imagenRuta = producto.imagenesProducto?.[0]?.urlImagen;
+            const imagenUrl = imagenRuta
+                ? `https://localhost:7291${imagenRuta}`
+                : 'https://localhost:7291/imagenes/placeholder.png';
+
             const card = document.createElement("div");
             card.classList.add("col-md-3", "col-sm-6", "mb-4");
-        
+
             card.innerHTML = `
-                <div class="card border-0 h-100">
+                <div class="card border-0 h-100 producto-card" data-id="${producto.productoId}" style="cursor: pointer;">
                     <img src="${imagenUrl}" class="card-img-top product-img" alt="${producto.nombre}">
                     <div class="card-body text-start">
                         <p class="fw-semibold mb-1">${producto.nombre}</p>
@@ -58,18 +55,17 @@ console.log("🖼️ Imagen URL cargada:", imagenUrl);
                             <span class="text-muted small ms-1">4.0/5</span>
                         </div>
                         <p class="fw-bold">$${producto.precio?.toFixed(2) || '0.00'}</p>
-                        <button class="btn btn-outline-danger btn-sm w-100 eliminar-fav" data-id="${fav.favoritoId}">
+                        <button class="btn btn-outline-danger btn-sm w-100 eliminar-fav" data-id="${fav.favoritoId}" onclick="event.stopPropagation();">
                             <i class="fa fa-trash"></i> Eliminar
                         </button>
                     </div>
                 </div>
             `;
-        
+
             container.appendChild(card);
         });
-        
 
-        // 🗑 Eventos de eliminación
+        // 🗑 Eliminar favorito
         document.querySelectorAll(".eliminar-fav").forEach(btn => {
             btn.addEventListener("click", async () => {
                 const id = btn.dataset.id;
@@ -87,20 +83,27 @@ console.log("🖼️ Imagen URL cargada:", imagenUrl);
             });
         });
 
+        // 📌 Redireccionar al hacer clic en toda la tarjeta
+        document.querySelectorAll(".producto-card").forEach(card => {
+            card.addEventListener("click", () => {
+                const id = card.dataset.id;
+                window.location.href = `detalleproducto.html?productoId=${id}`;
+            });
+        });
+
     } catch (err) {
         console.error("Error al cargar favoritos:", err);
         container.innerHTML = "<p class='text-danger'>Hubo un error al cargar los favoritos :(</p>";
     }
 }
 
-// Cerrar sesión
+// 🔒 Cerrar sesión
 const btnLogout = document.getElementById("logoutUsuario");
 if (btnLogout) {
-  btnLogout.addEventListener("click", () => {
-    localStorage.removeItem("usuarioId");
-    localStorage.removeItem("nombreUsuario");
-    localStorage.removeItem("token");
-    window.location.href = "../login.html";
-  });
+    btnLogout.addEventListener("click", () => {
+        localStorage.removeItem("usuarioId");
+        localStorage.removeItem("nombreUsuario");
+        localStorage.removeItem("token");
+        window.location.href = "../login.html";
+    });
 }
-

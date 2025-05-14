@@ -1,70 +1,130 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const usuarioId = localStorage.getItem("usuarioId");
   const nombre = localStorage.getItem("nombreUsuario");
 
-  // Verificar sesión activa
   if (!usuarioId || !nombre) {
     alert("Acceso denegado. Por favor inicia sesión.");
     window.location.href = "../../html/login.html";
     return;
   }
 
-  const nombreSpan = document.getElementById("nombreUsuario");
-  if (nombreSpan) nombreSpan.textContent = nombre;
+  document.getElementById("nombreUsuario").textContent = nombre;
 
-  cargarProductosConFavoritos();
+  cargarFiltros();
+  const params = new URLSearchParams(window.location.search);
+  const categoriaId = params.get("categoria");
+  const marcaId = params.get("marca");
+  cargarProductosConFavoritos({ categoriaId, marcaId });
+
+  document.querySelector(".search-input")?.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      const valor = e.target.value.trim();
+      if (valor) {
+        window.location.href = `productosusuario.html?busqueda=${encodeURIComponent(valor)}`;
+      }
+    }
+  });
+
+  document.getElementById("logoutUsuario")?.addEventListener("click", () => {
+    localStorage.clear();
+    window.location.href = "../index.html";
+  });
+
+  document.getElementById("btnAplicarFiltros")?.addEventListener("click", () => {
+    const categoriaId = document.getElementById("filtroCategoria")?.value;
+    const marcaId = document.getElementById("filtroMarca")?.value;
+
+    const params = new URLSearchParams(window.location.search);
+    if (categoriaId) params.set("categoria", categoriaId);
+    else params.delete("categoria");
+    if (marcaId) params.set("marca", marcaId);
+    else params.delete("marca");
+
+    window.location.href = `productosusuario.html?${params.toString()}`;
+  });
 });
 
-// Cargar productos y favoritos
-async function cargarProductosConFavoritos() {
-  const productosContainer = document.getElementById("productosContainer");
+async function cargarFiltros() {
+  const categoriaSel = document.getElementById("filtroCategoria");
+  const marcaSel = document.getElementById("filtroMarca");
+
+  if (!categoriaSel || !marcaSel) return;
+
+  const [cats, marcas] = await Promise.all([
+    fetch("https://localhost:7291/auxiliares/categorias/todas").then(r => r.json()),
+    fetch("https://localhost:7291/auxiliares/marcas/todas").then(r => r.json())
+  ]);
+
+  cats.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c.categoriaId;
+    opt.textContent = c.nombre;
+    categoriaSel.appendChild(opt);
+  });
+
+  marcas.forEach(m => {
+    const opt = document.createElement("option");
+    opt.value = m.marcaId;
+    opt.textContent = m.nombre;
+    marcaSel.appendChild(opt);
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const categoriaActual = params.get("categoria");
+  const marcaActual = params.get("marca");
+  if (categoriaActual) categoriaSel.value = categoriaActual;
+  if (marcaActual) marcaSel.value = marcaActual;
+}
+
+async function cargarProductosConFavoritos(filtros = {}) {
+  const container = document.getElementById("productosContainer");
   const usuarioId = localStorage.getItem("usuarioId");
-  productosContainer.innerHTML = "";
+  container.innerHTML = "";
+
+  const { categoriaId, marcaId } = filtros;
+  const params = new URLSearchParams(window.location.search);
+  const busqueda = params.get("busqueda");
+
+  let endpoint = "https://localhost:7291/productos/conImagenPrincipal";
+
+  if (busqueda) {
+    endpoint = `https://localhost:7291/productos/buscarConImagen/${encodeURIComponent(busqueda)}`;
+  } else if (categoriaId && marcaId) {
+    endpoint = `https://localhost:7291/productos/filtrar?categoriaId=${categoriaId}&marcaId=${marcaId}`;
+  } else if (categoriaId) {
+    endpoint = `https://localhost:7291/productos/filtrar?categoriaId=${categoriaId}`;
+  } else if (marcaId) {
+    endpoint = `https://localhost:7291/productos/filtrar?marcaId=${marcaId}`;
+  }
+
 
   try {
-    const [productosRes, favoritosRes] = await Promise.all([
-      fetch("https://localhost:7291/Productos/conImagenPrincipal"),
-      fetch(`https://localhost:7291/Favoritos/Usuario/${usuarioId}`)
+    const [productos, favoritos] = await Promise.all([
+      fetch(endpoint).then(r => r.json()),
+      fetch(`https://localhost:7291/Favoritos/Usuario/${usuarioId}`).then(r => r.json())
     ]);
 
-    if (!productosRes.ok || !favoritosRes.ok) throw new Error("Error al obtener productos o favoritos");
-
-    const productos = await productosRes.json();
-    const favoritos = await favoritosRes.json();
-
-    const favoritosIds = {};
-    favoritos.forEach(f => {
-      favoritosIds[f.productoId] = f.favoritoId;
-    });
+    const favoritosMap = {};
+    favoritos.forEach(f => favoritosMap[f.productoId] = f.favoritoId);
 
     productos.forEach(p => {
-      const esFavorito = favoritosIds.hasOwnProperty(p.productoId);
-      const idFavorito = favoritosIds[p.productoId] || "";
-      const icono = esFavorito ? "fa-solid fa-heart text-danger" : "fa-regular fa-heart text-danger";
+      const fav = favoritosMap[p.productoId];
+      const icono = fav ? "fa-solid fa-heart text-danger" : "fa-regular fa-heart text-danger";
+      const img = p.imagen || "/imagenes/placeholder.png";
 
       const card = document.createElement("div");
       card.classList.add("col-md-4");
       card.innerHTML = `
         <div class="card border-0 h-100 position-relative">
-          <img src="https://localhost:7291${p.imagen || '/imagenes/placeholder.png'}"
-               class="card-img-top product-img" alt="${p.nombre}">
+          <img src="https://localhost:7291${img}" class="card-img-top product-img" alt="${p.nombre}">
           <button class="btn btn-link position-absolute top-0 end-0 m-2 p-0 icon-fav"
-                  data-producto-id="${p.productoId}" data-favorito="${esFavorito}" data-id-favorito="${idFavorito}">
+                  data-producto-id="${p.productoId}" data-favorito="${!!fav}" data-id-favorito="${fav || ""}">
             <i class="${icono}" style="font-size: 20px;"></i>
           </button>
           <div class="card-body">
             <p class="fw-semibold mb-1">${p.nombre}</p>
-            <div class="d-flex align-items-center mb-1">
-              <span class="text-warning me-1">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-              </span>
-              <span class="text-muted small ms-1">3.5/5</span>
-            </div>
             <p class="fw-bold">$${p.precio.toFixed(2)}</p>
-            <a href="../Usuarios/detalleproducto.html?productoId=${p.productoId}" 
-               class="btn btn-outline-dark w-100 mt-2">Ver más</a>
+            <a href="../Usuarios/detalleproducto.html?productoId=${p.productoId}" class="btn btn-outline-dark w-100 mt-2">Ver más</a>
             <button class="btn btn-outline-dark w-100 mt-2 btn-agregar-carrito" 
                     data-producto-id="${p.productoId}" data-precio="${p.precio}">
               <i class="fa fa-shopping-cart me-2"></i>Agregar al carrito
@@ -72,11 +132,9 @@ async function cargarProductosConFavoritos() {
           </div>
         </div>
       `;
-
-      productosContainer.appendChild(card);
+      container.appendChild(card);
     });
 
-    // Funcionalidad de favoritos
     document.querySelectorAll(".icon-fav").forEach(btn => {
       btn.addEventListener("click", async () => {
         const icon = btn.querySelector("i");
@@ -87,83 +145,65 @@ async function cargarProductosConFavoritos() {
         icon.classList.add("pop");
         setTimeout(() => icon.classList.remove("pop"), 200);
 
-        if (esFavorito && idFavorito) {
-          await fetch(`https://localhost:7291/Favoritos/Eliminarfavorito/${idFavorito}`, {
-            method: "DELETE"
-          });
+        if (esFavorito) {
+          await fetch(`https://localhost:7291/Favoritos/Eliminarfavorito/${idFavorito}`, { method: "DELETE" });
           icon.className = "fa-regular fa-heart text-danger";
           btn.dataset.favorito = "false";
           btn.dataset.idFavorito = "";
         } else {
-          const res = await fetch(`https://localhost:7291/Favoritos/Agregar`, {
+          const res = await fetch("https://localhost:7291/Favoritos/Agregar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ usuarioId: parseInt(usuarioId), productoId: parseInt(productoId) })
           });
-          const nuevoFavorito = await res.json();
+          const nuevo = await res.json();
           icon.className = "fa-solid fa-heart text-danger";
           btn.dataset.favorito = "true";
-          btn.dataset.idFavorito = nuevoFavorito.idFavorito;
+          btn.dataset.idFavorito = nuevo.idFavorito;
         }
       });
     });
 
-    // Agregar al carrito con verificación
-document.querySelectorAll(".btn-agregar-carrito").forEach(btn => {
-  btn.addEventListener("click", async () => {
-    const productoId = parseInt(btn.dataset.productoId);
-    const precioUnitario = parseFloat(btn.dataset.precio);
-    const usuarioId = parseInt(localStorage.getItem("usuarioId"));
+    document.querySelectorAll(".btn-agregar-carrito").forEach(btn => {
+      btn.addEventListener("click", async () => {
+        const productoId = parseInt(btn.dataset.productoId);
+        const precioUnitario = parseFloat(btn.dataset.precio);
+        const usuarioId = parseInt(localStorage.getItem("usuarioId"));
 
-    try {
-      // Verificar si ya está en el carrito
-      const carritoRes = await fetch(`https://localhost:7291/carrito/Usuario/${usuarioId}`);
-      const carrito = await carritoRes.json();
-      const yaExiste = carrito.some(item => item.productoId === productoId && !item.comprado);
+        const res = await fetch(`https://localhost:7291/carrito/Usuario/${usuarioId}`);
+        const carrito = await res.json();
+        const yaExiste = carrito.some(item => item.productoId === productoId && item.estadoProductoId === 1);
 
-      if (yaExiste) {
-        alert("⚠️ El producto ya está en el carrito.");
-        return;
-      }
+        if (yaExiste) {
+          alert("⚠️ El producto ya está en el carrito.");
+          return;
+        }
 
-      // Agregar si no existe
-      const res = await fetch("https://localhost:7291/carrito/Agregar", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          usuarioId,
-          productoId,
-          cantidad: 1,
-          comprado: false,
-          precioUnitario
-        })
+        const agregar = await fetch("https://localhost:7291/carrito/agregar", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            usuarioId, productoId, cantidad: 1, estadoProductoId: 1, precioUnitario
+          })
+        });
+
+        if (agregar.ok) {
+          alert("✅ Producto agregado al carrito 🛒");
+        } else {
+          alert("❌ No se pudo agregar al carrito");
+        }
       });
+    });
 
-      if (res.ok) {
-        alert("✅ Producto agregado al carrito 🛒");
-      } else if (res.status === 409) {
-        alert("⚠️ El producto ya está en el carrito.");
-      } else {
-        alert("❌ No se pudo agregar al carrito");
-      }
-    } catch (error) {
-      console.error("Error al agregar al carrito:", error);
-      alert("⚠️ Error de red al agregar producto.");
-    }
-  });
-});
-
-
-  } catch (error) {
-    console.error("Error al cargar productos:", error);
-    productosContainer.innerHTML = `<p class="text-danger">No se pudieron cargar los productos :(</p>`;
+  } catch (err) {
+    console.error("Error:", err);
+    container.innerHTML = `<p class="text-danger">No se pudieron cargar los productos :(</p>`;
   }
 }
 
-// 🔹 Logout
-document.getElementById("logoutUsuario")?.addEventListener("click", () => {
-  localStorage.removeItem("usuarioId");
-  localStorage.removeItem("nombreUsuario");
-  localStorage.removeItem("token");
-  window.location.href = "../index.html";
+document.getElementById("btnAplicarFiltros")?.addEventListener("click", () => {
+  const categoriaId = document.getElementById("filtroCategoria")?.value;
+  const marcaId = document.getElementById("filtroMarca")?.value;
+
+  cargarProductosConFavoritos({ categoriaId, marcaId });
 });

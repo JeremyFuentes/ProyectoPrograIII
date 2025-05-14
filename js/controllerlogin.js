@@ -82,9 +82,11 @@ localStorage.setItem("nombreUsuario", data.nombre);
             });
 
             if (!response.ok) {
-                const errorMessage = await response.text();
-                throw new Error(errorMessage || "Error al registrar usuario");
-            }
+              const errorMessage = await response.text();
+              errorRegister.textContent = errorMessage;
+              errorRegister.classList.remove("d-none");
+              return;
+          }          
 
             registerCard.classList.add("d-none");
             loginCard.classList.remove("d-none");
